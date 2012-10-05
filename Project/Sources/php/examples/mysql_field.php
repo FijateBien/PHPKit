@@ -1,7 +1,13 @@
 <?php
 
 /**
- * class mysql_field
+ *	This class is mysql field class for constructing phpkit::mysql_tables objects
+ *
+ * @package phpkit
+ * @subpackage mysql
+ * @since 0.0.1
+ * @author Alberto Miranda Dencowski <alberto@fijatebien.net>
+ * @licence GPLv2
  * 
  */
 class mysql_field {
@@ -10,81 +16,119 @@ class mysql_field {
     /*     * * Attributes: ** */
 
     /**
-     * 
+     * The name of the field
      * @access private
+     * @var String 
+     * @default ""
+     * @since 0.0.1
+     *
      */
     public $name;
 
     /**
-     * 
+     * The name of the table for
      * @access private
+     * @var String
+     * @default ""
+     * @since 0.0.1
      */
     public $table = "";
 
     /**
-     * 
+     * The max length of the field
      * @access private
+     * @var int
+     * @default 11
+     * @since 0.0.1
      */
-    public $max_length = false;
+    public $max_length = 11;
 
     /**
-     * 
+     * Boolean attr defines if the field can be leaved null
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $not_null = false;
 
     /**
-     * 
+     * Boolean attr defines if the field is primary key in the table
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $primary_key = false;
 
     /**
-     * 
+     * Boolean attr defines if the field is unique key in the table
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $unique_key = false;
 
     /**
-     * 
+     * Boolean attr defines if the field is multiple key in the table
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $multiple_key = false;
 
     /**
-     * 
+     * Boolean attr defines if the field is numeric
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $numeric = false;
 
     /**
-     * 
+     * Boolean attr defines if the field is a blob
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $blob = false;
 
     /**
-     * 
+     * String determines the field type
      * @access private
+     * @var string
+     * @default "int"
+     * @since 0.0.1
      */
     public $type = "int";
 
     /**
-     * 
+     * This attr defines if the integer field will have sing (for ex. -9) 
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $unsigned = false;
 
     /**
-     * 
+     * This attr defines if the integer field will be zerofilled (For ex. 123 to 0000000123) 
      * @access private
+     * @var bool
+     * @default false
+     * @since 0.0.1
      */
     public $zerofill = false;
 
     /*     * * operations ** */
 
     /**
-     * 
+     * 		Construct Method for mysql_field class
+     *
      * @param string name
      * 
      * @param string table

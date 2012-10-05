@@ -1,7 +1,16 @@
 <?php
 
 /**
- * class mysql_connection
+ *
+ *	This class handles MySQL_Connect Function
+ * 	Has an attribute Resource mysql_connection_link
+ *	Contains the resource of the connection to mysql server
+ *
+ * @package phpkit
+ * @subpackage mysql
+ * @author Alberto Miranda Dencowski <alberto@fijatebien.net>
+ * @since 0.0.1
+ * @licence GPLv2
  * 
  */
 class mysql_connection {
@@ -10,43 +19,64 @@ class mysql_connection {
     /*     * * Attributes: ** */
 
     /**
-     * 
+     * Mysql Server IP or Name
      * @access private
+     * @var string
+     * @default "localhost"
+     * @since 0.0.1
      */
     private $mysql_server = "localhost";
 
     /**
-     * 
+     * Mysql user name
      * @access private
+     * @var string
+     * @default "root"
+     * @since 0.0.1
      */
     private $mysql_user = "root";
 
     /**
-     * 
+     * Mysql user password
      * @access private
+     * @var string
+     * @default ""
+     * @since 0.0.1
      */
     private $mysql_password = "";
 
     /**
-     * 
+     * Mysql database name
      * @access private
+     * @var string
+     * @default ""
+     * @since 0.0.1
      */
     private $mysql_database = "";
 
     /**
-     * 
+     * Mysql connection link Resource
      * @access private
+     * @var Resource
+     * @default null
+     * @since 0.0.1
      */
     public $mysql_connection_link = null;
 
     /**
-     * 
+     * Mysql loggin path ["CURRENT_DIRECTORY"] / error_log
      * @access private
+     * @var String
+     * @default "error_log"
+     * @since 0.0.1
      */
     private $mysql_log_path = "error_log";
 
     /**
-     * Constructor Method for the class. Mysql_Connection
+     * 		
+     *		Constructor Method for the class. Mysql_Connection
+     * 		Note: This function doesn't call to mysql_connect
+     * 		After construct you need to call the method <connect()>
      * 
      *
      * @param string mysql_user_name Nombre de usuario para Mysql
@@ -68,7 +98,7 @@ class mysql_connection {
         $this->mysql_database = $mysql_database_name;
         // Construct done
         /*
-         * 	Return THis
+         * 	Return This
          */
         return $this;
     }
@@ -76,10 +106,11 @@ class mysql_connection {
 // end of member function __construct
 
     /**
-     * 
+     * 		Connect to mysql method
      *
      * @return bool
      * @access public
+     * @since 0.0.1
      */
     public function connect() {
         // Connect to mysql
@@ -104,10 +135,12 @@ class mysql_connection {
 
 // end of member function connect
     /**
-     *
+     * Return musql_stat function result   
+     * @param auto_print bool
      *
      * @return string
      * @access public
+     * @since 0.0.1
      */
     public function status($auto_print = false) {
         // Get mysql stat string
@@ -122,11 +155,12 @@ class mysql_connection {
 
 // End of member function status
     /**
-     *
+     * Error loggin method
      * @param Exception exception 
      *
      * @return void
      * @access public
+     * @since 0.0.1
      */
     public function log($ec) {
         touch($this->mysql_log_path);
@@ -148,9 +182,10 @@ class mysql_connection {
 
 //end of function member log
     /**
-     * 
+     * Deletes the log file 
      * @access public
      * @return void
+     * @since 0.0.1
      */
     public function delete_log_file() {
         if (file_exists($this->mysql_log_path))
@@ -158,9 +193,10 @@ class mysql_connection {
     }
 
     /**
-     * 
+     * Read and uncompress the log file
      * @access public
      * @return void
+     * @since 0.0.1
      */
     public function read_log() {
         $buffer = "";
@@ -173,9 +209,10 @@ class mysql_connection {
     }
 
     /**
-     * 
+     * Method to close the mysql_connection_link
      * @access public
      * @return void
+     * @since 0.0.1
      */
     public function close() {
         // Close the connection to mysql

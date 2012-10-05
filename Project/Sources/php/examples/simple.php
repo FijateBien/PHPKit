@@ -1,6 +1,7 @@
 <?php
-/*
+/**
  * Created by alberto
+ * @example
  */
 require_once ( "mysql_connection.php" );
 require_once ( "mysql_command.php" );

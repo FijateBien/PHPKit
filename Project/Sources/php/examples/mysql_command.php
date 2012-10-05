@@ -1,49 +1,60 @@
 <?php
 
 /**
- *  class mysql_command
- * 
- *  create by alberto
- * 
+ *	This class handles the mysql_query function  
+ * 	
+ * @package phpkit
+ * @subpackage mysql
+ * @author Alberto Miranda Dencowski <alberto@fijatebien.net>
+ * @since 0.0.1
+ * @licence GPLv2
  */
 class mysql_command {
 
     /** Aggregations: */
-    // Test change
+    
     /** Compositions: */
     /*     * * Attributes: ** */
-    // test
     /**
-     * 
+     * SQL String to execute
      * @access private
+     * @var String
+     * @since 0.0.1
      * 
      */
     private $sql_string;
 
     /**
-     * 
+     * Mysql Query Resource
      * @access private
+     * @var Resource
+     * @since 0.0.1
      */
     public $mysql_query_id = null;
 
     /**
-     * 
+     * Mysql_Connection Object
      * @access private
+     * @var phpkit::mysql_connection
+     * @since 0.0.1
      */
     private $mysql_connection_obj = null;
 
     /**
-     * If the query is for fetching data, yo must pass 1 in the construct method
+     * If the query is for data fetching, yo must pass 1 in the construct method
      * Else pass 0 
      * 
      * @access private
+     * @var int
+     * @since 0.0.1
      */
     private $command_type;
 
     /*     * * Operations ** */
 
     /**
-     * 
+     * Mysql_Command Contructor Method
+     *
      * @param string sql_string
      * 
      * @param mysql_connection connection
@@ -51,19 +62,31 @@ class mysql_command {
      * @param int cmd_type
      * 
      * @access public
-     * @return mysql_command
+     * @return phpkit::mysql_command
+     *
+     * @since 0.0.1
+     *
      */
     public function __construct($sql_string, $connection, $cmd_type) {
+	// Begin construct
         $this->mysql_connection_obj = $connection;
         $this->sql_string = $sql_string;
         $this->command_type = $cmd_type;
+        // Return this
+        return $this;
     }
 
 // End of member function __construct
     /**
-     * 
+     *		This method run the mysql_query 
+     *
+     * @param sql_string String
+     *
      * @access public
+     *
      * @return bool
+     *
+     * @since 0.0.1
      * 
      */
     public function exec($sql_string = null) {
@@ -83,9 +106,14 @@ class mysql_command {
     }
 
     /**
-     * 
+     *	This method run mysql_fetch_object and return an array with the rows
+     *
      * @access public 
+     *
      * @return array
+     *
+     * @since 0.0.1
+     *
      */
     public function fetch() {
         $items = array();
@@ -102,9 +130,12 @@ class mysql_command {
     }
 
     /**
-     * 
+     * 	This function run mysql_fetch_field recursively and return an array
+     *	with the fields in objects
+     *
      * @access public
      * @return array
+     * @since 0.0.1
      */
     public function fetch_fields() {
         $num_fields = mysql_num_fields($this->mysql_query_id);
@@ -118,9 +149,11 @@ class mysql_command {
     }
 
     /**
-     * 
+     * This function fetch only one row of the query
+     *
      * @access public
      * @return array
+     * @since 0.0.1
      */
     public function fetch_one() {
         $item = mysql_fetch_object($this->mysql_query_id);
@@ -128,8 +161,12 @@ class mysql_command {
     }
 
     /**
-     * 
+     * This function creates a html table based on a fetched array
+     *
+     * @param $fetch_data array
+     *
      * @access public
+     *
      * @return void
      */
     public function generate_report($fetch_data) {
