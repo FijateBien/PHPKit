@@ -7,8 +7,6 @@ require_once ( "mysql_connection.php" );
 require_once ( "mysql_command.php" );
 require_once ( "mysql_field.php" );
 require_once ( "mysql_table.php" );
-require_once ( "mysql_list_view.php" );
-require_once ( "mysql_report.php" );
 
 $myConnection = new mysql_connection("root", "471291471291", "localhost", "fumitodo");
 
@@ -25,7 +23,7 @@ $ID = $myTable->sanitize($_GET['p']);
 
 $myResource = new mysql_command("SELECT * from paginas WHERE ID = '$ID';", $myConnection, 1);
 
-/* $myResource -> exec ( );
+  $myResource -> exec ( );
 
   $myList = $myResource -> fetch_one( );
 
@@ -43,9 +41,4 @@ $myResource = new mysql_command("SELECT * from paginas WHERE ID = '$ID';", $myCo
 
   $myResource -> generate_report( $myList );
 
-  $list_view = new mysql_list_view( $myResource, "paginas", 4, 4, "Titulo" );
-
-  $list_view -> generate_list_view( ); */
-
-$report = new mysql_report($myResource, "paginas");
 ?> 
