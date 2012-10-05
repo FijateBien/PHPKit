@@ -32,7 +32,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">61</span></a></li>
+                <span class="label label-info">19</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -58,18 +58,12 @@
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
 <li class="method public "><a href="#method___construct" title="__construct :: Constructor Method for the class."><span class="description">Constructor Method for the class.</span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method_close" title="close :: "><span class="description">close()
-        </span><pre>close()</pre></a></li>
-<li class="method public "><a href="#method_connect" title="connect :: "><span class="description">connect()
-        </span><pre>connect()</pre></a></li>
-<li class="method public "><a href="#method_delete_log_file" title="delete_log_file :: "><span class="description">delete_log_file()
-        </span><pre>delete_log_file()</pre></a></li>
-<li class="method public "><a href="#method_log" title="log :: "><span class="description">log()
-        </span><pre>log()</pre></a></li>
-<li class="method public "><a href="#method_read_log" title="read_log :: "><span class="description">read_log()
-        </span><pre>read_log()</pre></a></li>
-<li class="method public "><a href="#method_status" title="status :: "><span class="description">status()
-        </span><pre>status()</pre></a></li>
+<li class="method public "><a href="#method_close" title="close :: Method to close the mysql_connection_link"><span class="description">Method to close the mysql_connection_link</span><pre>close()</pre></a></li>
+<li class="method public "><a href="#method_connect" title="connect :: Connect to mysql method"><span class="description">Connect to mysql method</span><pre>connect()</pre></a></li>
+<li class="method public "><a href="#method_delete_log_file" title="delete_log_file :: Deletes the log file"><span class="description">Deletes the log file</span><pre>delete_log_file()</pre></a></li>
+<li class="method public "><a href="#method_log" title="log :: Error loggin method"><span class="description">Error loggin method</span><pre>log()</pre></a></li>
+<li class="method public "><a href="#method_read_log" title="read_log :: Read and uncompress the log file"><span class="description">Read and uncompress the log file</span><pre>read_log()</pre></a></li>
+<li class="method public "><a href="#method_status" title="status :: Return musql_stat function result"><span class="description">Return musql_stat function result</span><pre>status()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
@@ -106,7 +100,11 @@ Contains the resource of the connection to mysql server</p>
 <table class="table table-bordered">
 <tr>
 <th>package</th>
-<td><a href="../packages/phpkit.html">phpkit</a></td>
+<td><a href="../packages/phpkit.mysql.html">phpkit</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>mysql</td>
 </tr>
 <tr>
 <th>author</th>
@@ -153,57 +151,77 @@ Contains the resource of the connection to mysql server</p>
 </div></div>
 </div>
 <a id="method_close"></a><div class="element clickable method public method_close" data-toggle="collapse" data-target=".method_close .collapse">
-<h2>close()
-        </h2>
+<h2>Method to close the mysql_connection_link</h2>
 <pre>close() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="method_connect"></a><div class="element clickable method public method_connect" data-toggle="collapse" data-target=".method_connect .collapse">
-<h2>connect()
-        </h2>
+<h2>Connect to mysql method</h2>
 <pre>connect() : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_delete_log_file"></a><div class="element clickable method public method_delete_log_file" data-toggle="collapse" data-target=".method_delete_log_file .collapse">
-<h2>delete_log_file()
-        </h2>
+<h2>Deletes the log file</h2>
 <pre>delete_log_file() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="method_log"></a><div class="element clickable method public method_log" data-toggle="collapse" data-target=".method_log .collapse">
-<h2>log()
-        </h2>
+<h2>Error loggin method</h2>
 <pre>log(<a href="http://php.net/manual/en/class.exception.php">\Exception</a> $ec) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$ec</h4>
@@ -211,31 +229,43 @@ Contains the resource of the connection to mysql server</p>
 </div></div>
 </div>
 <a id="method_read_log"></a><div class="element clickable method public method_read_log" data-toggle="collapse" data-target=".method_read_log .collapse">
-<h2>read_log()
-        </h2>
+<h2>Read and uncompress the log file</h2>
 <pre>read_log() : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="method_status"></a><div class="element clickable method public method_status" data-toggle="collapse" data-target=".method_status .collapse">
-<h2>status()
-        </h2>
-<pre>status($auto_print) : string</pre>
+<h2>Return musql_stat function result</h2>
+<pre>status(\auto_print $auto_print) : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$auto_print</h4></div>
+<div class="subelement argument">
+<h4>$auto_print</h4>
+<code>\auto_print</code><p>bool</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>string</code></div>
 </div></div>
@@ -381,7 +411,7 @@ Contains the resource of the connection to mysql server</p>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-10-05T12:47:29-04:00.<br></footer></div>
+            generated on 2012-10-05T14:09:17-04:00.<br></footer></div>
 </div>
 </body>
 </html>

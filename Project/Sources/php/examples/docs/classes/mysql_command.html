@@ -32,7 +32,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">61</span></a></li>
+                <span class="label label-info">19</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -57,31 +57,27 @@
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
                     <ul>
-<li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
-        </span><pre>__construct()</pre></a></li>
-<li class="method public "><a href="#method_exec" title="exec :: "><span class="description">exec()
-        </span><pre>exec()</pre></a></li>
-<li class="method public "><a href="#method_fetch" title="fetch :: "><span class="description">fetch()
-        </span><pre>fetch()</pre></a></li>
-<li class="method public "><a href="#method_fetch_fields" title="fetch_fields :: "><span class="description">fetch_fields()
-        </span><pre>fetch_fields()</pre></a></li>
-<li class="method public "><a href="#method_fetch_one" title="fetch_one :: "><span class="description">fetch_one()
-        </span><pre>fetch_one()</pre></a></li>
-<li class="method public "><a href="#method_generate_report" title="generate_report :: "><span class="description">generate_report()
-        </span><pre>generate_report()</pre></a></li>
+<li class="method public "><a href="#method___construct" title="__construct :: Mysql_Command Contructor Method"><span class="description">Mysql_Command Contructor Method</span><pre>__construct()</pre></a></li>
+<li class="method public "><a href="#method_exec" title="exec :: This method run the mysql_query"><span class="description">This method run the mysql_query</span><pre>exec()</pre></a></li>
+<li class="method public "><a href="#method_fetch" title="fetch :: This method run mysql_fetch_object and return an array with the rows"><span class="description">This method run mysql_fetch_object and return an array with the rows</span><pre>fetch()</pre></a></li>
+<li class="method public "><a href="#method_fetch_fields" title="fetch_fields :: This function run mysql_fetch_field recursively and return an array
+with the fields in objects"><span class="description">This function run mysql_fetch_field recursively and return an array
+with the fields in objects</span><pre>fetch_fields()</pre></a></li>
+<li class="method public "><a href="#method_fetch_one" title="fetch_one :: This function fetch only one row of the query"><span class="description">This function fetch only one row of the query</span><pre>fetch_one()</pre></a></li>
+<li class="method public "><a href="#method_generate_report" title="generate_report :: This function creates a html table based on a fetched array"><span class="description">This function creates a html table based on a fetched array</span><pre>generate_report()</pre></a></li>
 </ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
-                    <ul><li class="property public "><a href="#property_mysql_query_id" title="$mysql_query_id :: "><span class="description">$mysql_query_id</span><pre>$mysql_query_id</pre></a></li></ul>
+                    <ul><li class="property public "><a href="#property_mysql_query_id" title="$mysql_query_id :: Mysql Query Resource"><span class="description">Mysql Query Resource</span><pre>$mysql_query_id</pre></a></li></ul>
 </li>
 <li class="nav-header private">» Private
                     <ul>
-<li class="property private "><a href="#property_command_type" title="$command_type :: If the query is for fetching data, yo must pass 1 in the construct method
-Else pass 0"><span class="description">If the query is for fetching data, yo must pass 1 in the construct method
+<li class="property private "><a href="#property_command_type" title="$command_type :: If the query is for data fetching, yo must pass 1 in the construct method
+Else pass 0"><span class="description">If the query is for data fetching, yo must pass 1 in the construct method
 Else pass 0</span><pre>$command_type</pre></a></li>
-<li class="property private "><a href="#property_mysql_connection_obj" title="$mysql_connection_obj :: "><span class="description">$mysql_connection_obj</span><pre>$mysql_connection_obj</pre></a></li>
-<li class="property private "><a href="#property_sql_string" title="$sql_string :: "><span class="description">$sql_string</span><pre>$sql_string</pre></a></li>
+<li class="property private "><a href="#property_mysql_connection_obj" title="$mysql_connection_obj :: Mysql_Connection Object"><span class="description">Mysql_Connection Object</span><pre>$mysql_connection_obj</pre></a></li>
+<li class="property private "><a href="#property_sql_string" title="$sql_string :: SQL String to execute"><span class="description">SQL String to execute</span><pre>$sql_string</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -97,22 +93,49 @@ Else pass 0</span><pre>$command_type</pre></a></li>
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">class mysql_command</p>
+<p class="short_description">This class handles the mysql_query function</p>
 <div class="details">
-<div class="long_description"><p>create by alberto</p></div>
+<div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/phpkit.mysql.html">phpkit</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>mysql</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:alberto@fijatebien.net">Alberto Miranda Dencowski</a></td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>licence</th>
+<td>GPLv2</td>
+</tr>
+</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-<h2>__construct()
-        </h2>
-<pre>__construct(string $sql_string, <a href="../classes/mysql_connection.html">\mysql_connection</a> $connection, int $cmd_type) : <a href="../classes/mysql_command.html">\mysql_command</a></pre>
+<h2>Mysql_Command Contructor Method</h2>
+<pre>__construct(string $sql_string, <a href="../classes/mysql_connection.html">\mysql_connection</a> $connection, int $cmd_type) : \phpkit::mysql_command</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Parameters</h3>
 <div class="subelement argument">
 <h4>$sql_string</h4>
@@ -124,75 +147,97 @@ Else pass 0</span><pre>$command_type</pre></a></li>
 <h4>$cmd_type</h4>
 <code>int</code><p>cmd_type</p></div>
 <h3>Returns</h3>
-<div class="subelement response"><code><a href="../classes/mysql_command.html">\mysql_command</a></code></div>
+<div class="subelement response"><code>\phpkit::mysql_command</code></div>
 </div></div>
 </div>
 <a id="method_exec"></a><div class="element clickable method public method_exec" data-toggle="collapse" data-target=".method_exec .collapse">
-<h2>exec()
-        </h2>
-<pre>exec($sql_string) : bool</pre>
+<h2>This method run the mysql_query</h2>
+<pre>exec(\sql_string $sql_string) : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$sql_string</h4></div>
+<div class="subelement argument">
+<h4>$sql_string</h4>
+<code>\sql_string</code><p>String</p></div>
 <h3>Returns</h3>
 <div class="subelement response"><code>bool</code></div>
 </div></div>
 </div>
 <a id="method_fetch"></a><div class="element clickable method public method_fetch" data-toggle="collapse" data-target=".method_fetch .collapse">
-<h2>fetch()
-        </h2>
+<h2>This method run mysql_fetch_object and return an array with the rows</h2>
 <pre>fetch() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_fetch_fields"></a><div class="element clickable method public method_fetch_fields" data-toggle="collapse" data-target=".method_fetch_fields .collapse">
-<h2>fetch_fields()
-        </h2>
+<h2>This function run mysql_fetch_field recursively and return an array
+with the fields in objects</h2>
 <pre>fetch_fields() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_fetch_one"></a><div class="element clickable method public method_fetch_one" data-toggle="collapse" data-target=".method_fetch_one .collapse">
-<h2>fetch_one()
-        </h2>
+<h2>This function fetch only one row of the query</h2>
 <pre>fetch_one() : array</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>public</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 <h3>Returns</h3>
 <div class="subelement response"><code>array</code></div>
 </div></div>
 </div>
 <a id="method_generate_report"></a><div class="element clickable method public method_generate_report" data-toggle="collapse" data-target=".method_generate_report .collapse">
-<h2>generate_report()
-        </h2>
-<pre>generate_report($fetch_data) : void</pre>
+<h2>This function creates a html table based on a fetched array</h2>
+<pre>generate_report(\$fetch_data $fetch_data) : void</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
@@ -201,58 +246,84 @@ Else pass 0</span><pre>$command_type</pre></a></li>
 <td>public</td>
 </tr></table>
 <h3>Parameters</h3>
-<div class="subelement argument"><h4>$fetch_data</h4></div>
+<div class="subelement argument">
+<h4>$fetch_data</h4>
+<code>\$fetch_data</code><p>array</p></div>
 </div></div>
 </div>
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_mysql_query_id"> </a><div class="element clickable property public property_mysql_query_id" data-toggle="collapse" data-target=".property_mysql_query_id .collapse">
-<h2>$mysql_query_id</h2>
-<pre>$mysql_query_id </pre>
+<h2>Mysql Query Resource</h2>
+<pre>$mysql_query_id : Resource</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_command_type"> </a><div class="element clickable property private property_command_type" data-toggle="collapse" data-target=".property_command_type .collapse">
-<h2>If the query is for fetching data, yo must pass 1 in the construct method
+<h2>If the query is for data fetching, yo must pass 1 in the construct method
 Else pass 0</h2>
-<pre>$command_type </pre>
+<pre>$command_type : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_mysql_connection_obj"> </a><div class="element clickable property private property_mysql_connection_obj" data-toggle="collapse" data-target=".property_mysql_connection_obj .collapse">
-<h2>$mysql_connection_obj</h2>
-<pre>$mysql_connection_obj </pre>
+<h2>Mysql_Connection Object</h2>
+<pre>$mysql_connection_obj : \phpkit::mysql_connection</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_sql_string"> </a><div class="element clickable property private property_sql_string" data-toggle="collapse" data-target=".property_sql_string .collapse">
-<h2>$sql_string</h2>
-<pre>$sql_string </pre>
+<h2>SQL String to execute</h2>
+<pre>$sql_string : String</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 </div>
@@ -262,7 +333,7 @@ Else pass 0</h2>
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-10-05T12:47:29-04:00.<br></footer></div>
+            generated on 2012-10-05T14:09:17-04:00.<br></footer></div>
 </div>
 </body>
 </html>

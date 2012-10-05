@@ -32,7 +32,7 @@
 <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
                                     Reports <b class="caret"></b></a><ul class="dropdown-menu">
 <li><a href="../errors.html"><i class="icon-remove-sign"></i> Errors 
-                <span class="label label-info">61</span></a></li>
+                <span class="label label-info">19</span></a></li>
 <li><a href="../markers.html"><i class="icon-map-marker"></i> Markers 
                 <ul></ul></a></li>
 <li><a href="../deprecated.html"><i class="icon-stop"></i> Deprecated elements 
@@ -56,24 +56,23 @@
 <ul class="side-nav nav nav-list">
 <li class="nav-header">
 <i class="icon-custom icon-method"></i> Methods
-                    <ul><li class="method public "><a href="#method___construct" title="__construct :: "><span class="description">__construct()
-        </span><pre>__construct()</pre></a></li></ul>
+                    <ul><li class="method public "><a href="#method___construct" title="__construct :: Construct Method for mysql_field class"><span class="description">Construct Method for mysql_field class</span><pre>__construct()</pre></a></li></ul>
 </li>
 <li class="nav-header">
 <i class="icon-custom icon-property"></i> Properties
                     <ul>
-<li class="property public "><a href="#property_blob" title="$blob :: "><span class="description">$blob</span><pre>$blob</pre></a></li>
-<li class="property public "><a href="#property_max_length" title="$max_length :: "><span class="description">$max_length</span><pre>$max_length</pre></a></li>
-<li class="property public "><a href="#property_multiple_key" title="$multiple_key :: "><span class="description">$multiple_key</span><pre>$multiple_key</pre></a></li>
-<li class="property public "><a href="#property_name" title="$name :: "><span class="description">$name</span><pre>$name</pre></a></li>
-<li class="property public "><a href="#property_not_null" title="$not_null :: "><span class="description">$not_null</span><pre>$not_null</pre></a></li>
-<li class="property public "><a href="#property_numeric" title="$numeric :: "><span class="description">$numeric</span><pre>$numeric</pre></a></li>
-<li class="property public "><a href="#property_primary_key" title="$primary_key :: "><span class="description">$primary_key</span><pre>$primary_key</pre></a></li>
-<li class="property public "><a href="#property_table" title="$table :: "><span class="description">$table</span><pre>$table</pre></a></li>
-<li class="property public "><a href="#property_type" title="$type :: "><span class="description">$type</span><pre>$type</pre></a></li>
-<li class="property public "><a href="#property_unique_key" title="$unique_key :: "><span class="description">$unique_key</span><pre>$unique_key</pre></a></li>
-<li class="property public "><a href="#property_unsigned" title="$unsigned :: "><span class="description">$unsigned</span><pre>$unsigned</pre></a></li>
-<li class="property public "><a href="#property_zerofill" title="$zerofill :: "><span class="description">$zerofill</span><pre>$zerofill</pre></a></li>
+<li class="property public "><a href="#property_blob" title="$blob :: Boolean attr defines if the field is a blob"><span class="description">Boolean attr defines if the field is a blob</span><pre>$blob</pre></a></li>
+<li class="property public "><a href="#property_max_length" title="$max_length :: The max length of the field"><span class="description">The max length of the field</span><pre>$max_length</pre></a></li>
+<li class="property public "><a href="#property_multiple_key" title="$multiple_key :: Boolean attr defines if the field is multiple key in the table"><span class="description">Boolean attr defines if the field is multiple key in the table</span><pre>$multiple_key</pre></a></li>
+<li class="property public "><a href="#property_name" title="$name :: The name of the field"><span class="description">The name of the field</span><pre>$name</pre></a></li>
+<li class="property public "><a href="#property_not_null" title="$not_null :: Boolean attr defines if the field can be leaved null"><span class="description">Boolean attr defines if the field can be leaved null</span><pre>$not_null</pre></a></li>
+<li class="property public "><a href="#property_numeric" title="$numeric :: Boolean attr defines if the field is numeric"><span class="description">Boolean attr defines if the field is numeric</span><pre>$numeric</pre></a></li>
+<li class="property public "><a href="#property_primary_key" title="$primary_key :: Boolean attr defines if the field is primary key in the table"><span class="description">Boolean attr defines if the field is primary key in the table</span><pre>$primary_key</pre></a></li>
+<li class="property public "><a href="#property_table" title="$table :: The name of the table for"><span class="description">The name of the table for</span><pre>$table</pre></a></li>
+<li class="property public "><a href="#property_type" title="$type :: String determines the field type"><span class="description">String determines the field type</span><pre>$type</pre></a></li>
+<li class="property public "><a href="#property_unique_key" title="$unique_key :: Boolean attr defines if the field is unique key in the table"><span class="description">Boolean attr defines if the field is unique key in the table</span><pre>$unique_key</pre></a></li>
+<li class="property public "><a href="#property_unsigned" title="$unsigned :: This attr defines if the integer field will have sing (for ex."><span class="description">This attr defines if the integer field will have sing (for ex.</span><pre>$unsigned</pre></a></li>
+<li class="property public "><a href="#property_zerofill" title="$zerofill :: This attr defines if the integer field will be zerofilled (For ex."><span class="description">This attr defines if the integer field will be zerofilled (For ex.</span><pre>$zerofill</pre></a></li>
 </ul>
 </li>
 </ul>
@@ -89,14 +88,35 @@
 </li>
 </ul>
 <div class="element class">
-<p class="short_description">class mysql_field</p>
+<p class="short_description">This class is mysql field class for constructing phpkit::mysql_tables objects</p>
 <div class="details">
 <div class="long_description"></div>
+<table class="table table-bordered">
+<tr>
+<th>package</th>
+<td><a href="../packages/phpkit.mysql.html">phpkit</a></td>
+</tr>
+<tr>
+<th>subpackage</th>
+<td>mysql</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+<tr>
+<th>author</th>
+<td><a href="mailto:alberto@fijatebien.net">Alberto Miranda Dencowski</a></td>
+</tr>
+<tr>
+<th>licence</th>
+<td>GPLv2</td>
+</tr>
+</table>
 <h3>
 <i class="icon-custom icon-method"></i> Methods</h3>
 <a id="method___construct"></a><div class="element clickable method public method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
-<h2>__construct()
-        </h2>
+<h2>Construct Method for mysql_field class</h2>
 <pre>__construct(string $name, string $table, int $max_length, bool $not_null, bool $primary_key, bool $unique_key, bool $multiple_key, bool $numeric, bool $blob, bool $type, bool $unsigned, bool $zerofill) : <a href="../classes/mysql_field.html">\mysql_field</a></pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
@@ -149,147 +169,267 @@
 <h3>
 <i class="icon-custom icon-property"></i> Properties</h3>
 <a id="property_blob"> </a><div class="element clickable property public property_blob" data-toggle="collapse" data-target=".property_blob .collapse">
-<h2>$blob</h2>
-<pre>$blob </pre>
+<h2>Boolean attr defines if the field is a blob</h2>
+<pre>$blob : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_max_length"> </a><div class="element clickable property public property_max_length" data-toggle="collapse" data-target=".property_max_length .collapse">
-<h2>$max_length</h2>
-<pre>$max_length </pre>
+<h2>The max length of the field</h2>
+<pre>$max_length : int</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>11</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_multiple_key"> </a><div class="element clickable property public property_multiple_key" data-toggle="collapse" data-target=".property_multiple_key .collapse">
-<h2>$multiple_key</h2>
-<pre>$multiple_key </pre>
+<h2>Boolean attr defines if the field is multiple key in the table</h2>
+<pre>$multiple_key : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_name"> </a><div class="element clickable property public property_name" data-toggle="collapse" data-target=".property_name .collapse">
-<h2>$name</h2>
-<pre>$name </pre>
+<h2>The name of the field</h2>
+<pre>$name : String</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>""</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_not_null"> </a><div class="element clickable property public property_not_null" data-toggle="collapse" data-target=".property_not_null .collapse">
-<h2>$not_null</h2>
-<pre>$not_null </pre>
+<h2>Boolean attr defines if the field can be leaved null</h2>
+<pre>$not_null : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_numeric"> </a><div class="element clickable property public property_numeric" data-toggle="collapse" data-target=".property_numeric .collapse">
-<h2>$numeric</h2>
-<pre>$numeric </pre>
+<h2>Boolean attr defines if the field is numeric</h2>
+<pre>$numeric : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_primary_key"> </a><div class="element clickable property public property_primary_key" data-toggle="collapse" data-target=".property_primary_key .collapse">
-<h2>$primary_key</h2>
-<pre>$primary_key </pre>
+<h2>Boolean attr defines if the field is primary key in the table</h2>
+<pre>$primary_key : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_table"> </a><div class="element clickable property public property_table" data-toggle="collapse" data-target=".property_table .collapse">
-<h2>$table</h2>
-<pre>$table </pre>
+<h2>The name of the table for</h2>
+<pre>$table : String</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>""</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_type"> </a><div class="element clickable property public property_type" data-toggle="collapse" data-target=".property_type .collapse">
-<h2>$type</h2>
-<pre>$type </pre>
+<h2>String determines the field type</h2>
+<pre>$type : string</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>"int"</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_unique_key"> </a><div class="element clickable property public property_unique_key" data-toggle="collapse" data-target=".property_unique_key .collapse">
-<h2>$unique_key</h2>
-<pre>$unique_key </pre>
+<h2>Boolean attr defines if the field is unique key in the table</h2>
+<pre>$unique_key : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
 <div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_unsigned"> </a><div class="element clickable property public property_unsigned" data-toggle="collapse" data-target=".property_unsigned .collapse">
-<h2>$unsigned</h2>
-<pre>$unsigned </pre>
+<h2>This attr defines if the integer field will have sing (for ex.</h2>
+<pre>$unsigned : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<div class="long_description"><p>-9)</p></div>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 <a id="property_zerofill"> </a><div class="element clickable property public property_zerofill" data-toggle="collapse" data-target=".property_zerofill .collapse">
-<h2>$zerofill</h2>
-<pre>$zerofill </pre>
+<h2>This attr defines if the integer field will be zerofilled (For ex.</h2>
+<pre>$zerofill : bool</pre>
 <div class="labels"></div>
 <div class="row collapse"><div class="detail-description">
-<div class="long_description"></div>
-<table class="table table-bordered"><tr>
+<div class="long_description"><p>123 to 0000000123)</p></div>
+<table class="table table-bordered">
+<tr>
 <th>access</th>
 <td>private</td>
-</tr></table>
+</tr>
+<tr>
+<th>default</th>
+<td>false</td>
+</tr>
+<tr>
+<th>since</th>
+<td>0.0.1</td>
+</tr>
+</table>
 </div></div>
 </div>
 </div>
@@ -299,7 +439,7 @@
 <div class="row"><footer class="span12">
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by <a href="http://glyphicons.com/">Glyphicons</a>.<br>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor 2.0.0a10</a> and<br>
-            generated on 2012-10-05T12:47:29-04:00.<br></footer></div>
+            generated on 2012-10-05T14:09:17-04:00.<br></footer></div>
 </div>
 </body>
 </html>
