@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project version="2.0.0a10" title="">
+  <file path="mysql_list_view.php" hash="53d0b06ac99e9c51b7255cd68032e422" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends/>
+      <name>mysql_list_view</name>
+      <full_name>\mysql_list_view</full_name>
+      <docblock line="4">
+        <description><![CDATA[class mysql_table]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="17" namespace="global" package="Default">
+        <name>$name</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="13">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="13" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="23" namespace="global" package="Default">
+        <name>$columns</name>
+        <default><![CDATA[3]]></default>
+        <docblock line="19">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="19" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="29" namespace="global" package="Default">
+        <name>$per_page</name>
+        <default><![CDATA[10]]></default>
+        <docblock line="25">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="25" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="35" namespace="global" package="Default">
+        <name>$primary_label</name>
+        <default><![CDATA[]]></default>
+        <docblock line="31">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="31" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="41" namespace="global" package="Default">
+        <name>$res</name>
+        <default><![CDATA[]]></default>
+        <docblock line="37">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="37" name="access" description="public"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="57" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="43">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="43" name="param" description="resource" type="\mysql_command" variable="$resource">
+            <type by_reference="false">\mysql_command</type>
+          </tag>
+          <tag line="43" name="param" description="name" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="43" name="param" description="columns" type="int" variable="$columns">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="43" name="param" description="per_page" type="int" variable="$per_page">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="43" name="param" description="primary_label" type="string" variable="$primary_label">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="43" name="access" description="public"/>
+        </docblock>
+        <argument line="57">
+          <name>$resource</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="57">
+          <name>$name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="57">
+          <name>$columns</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="57">
+          <name>$per_page</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="57">
+          <name>$primary_label</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="69" package="Default">
+        <name>generate_list_view</name>
+        <full_name>generate_list_view</full_name>
+        <docblock line="65">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="65" name="access" description="public"/>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_list_view.php</error>
+      <critical line="13" code="50019">No short description for property $name</critical>
+      <critical line="19" code="50019">No short description for property $columns</critical>
+      <critical line="25" code="50019">No short description for property $per_page</critical>
+      <critical line="31" code="50019">No short description for property $primary_label</critical>
+      <critical line="37" code="50019">No short description for property $res</critical>
+      <error line="43" code="50012">No short description for method __construct()</error>
+      <error line="65" code="50012">No short description for method generate_list_view()</error>
+    </parse_markers>
+  </file>
+  <file path="mysql_report.php" hash="a5abdb96368c3e2d5123a880d611b9f3" package="Default">
+    <class final="false" abstract="false" namespace="global" line="9" package="Default">
+      <extends/>
+      <name>mysql_report</name>
+      <full_name>\mysql_report</full_name>
+      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
+        <name>$mysql_command</name>
+        <default><![CDATA[]]></default>
+        <docblock line="11">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="11" name="access" description="public"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="16">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="16" name="access" description="public"/>
+        </docblock>
+        <argument line="20">
+          <name>$command</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="20">
+          <name>$table</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_report.php</error>
+      <error line="9" code="50000">No DocBlock was found for \mysql_report</error>
+      <critical line="11" code="50019">No short description for property $mysql_command</critical>
+      <error line="16" code="50012">No short description for method __construct()</error>
+      <error line="16" code="50015">Argument $command is missing from the Docblock of __construct()</error>
+      <error line="16" code="50015">Argument $table is missing from the Docblock of __construct()</error>
+    </parse_markers>
+  </file>
+  <file path="mysql_field.php" hash="1f8f0c358959f22d1f8c1b701a91b1fc" package="Default">
+    <class final="false" abstract="false" namespace="global" line="7" package="Default">
+      <extends/>
+      <name>mysql_field</name>
+      <full_name>\mysql_field</full_name>
+      <docblock line="3">
+        <description><![CDATA[class mysql_field]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="public" line="16" namespace="global" package="Default">
+        <name>$name</name>
+        <default><![CDATA[]]></default>
+        <docblock line="12">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="12" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="22" namespace="global" package="Default">
+        <name>$table</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="18">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="18" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="28" namespace="global" package="Default">
+        <name>$max_length</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="24">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="24" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="34" namespace="global" package="Default">
+        <name>$not_null</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="30">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="30" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="40" namespace="global" package="Default">
+        <name>$primary_key</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="36">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="36" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="46" namespace="global" package="Default">
+        <name>$unique_key</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="42">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="42" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="52" namespace="global" package="Default">
+        <name>$multiple_key</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="48">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="48" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="58" namespace="global" package="Default">
+        <name>$numeric</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="54">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="54" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="64" namespace="global" package="Default">
+        <name>$blob</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="60">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="60" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="70" namespace="global" package="Default">
+        <name>$type</name>
+        <default><![CDATA["int"]]></default>
+        <docblock line="66">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="66" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="76" namespace="global" package="Default">
+        <name>$unsigned</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="72">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="72" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="82" namespace="global" package="Default">
+        <name>$zerofill</name>
+        <default><![CDATA[false]]></default>
+        <docblock line="78">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="78" name="access" description="private"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="115" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="86">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="86" name="param" description="name" type="string" variable="$name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="86" name="param" description="table" type="string" variable="$table">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="86" name="param" description="max_length" type="int" variable="$max_length">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="86" name="param" description="not_null" type="bool" variable="$not_null">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="primary_key" type="bool" variable="$primary_key">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="unique_key" type="bool" variable="$unique_key">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="multiple_key" type="bool" variable="$multiple_key">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="numeric" type="bool" variable="$numeric">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="blob" type="bool" variable="$blob">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="type" type="bool" variable="$type">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="unsigned" type="bool" variable="$unsigned">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="param" description="zerofill" type="bool" variable="$zerofill">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="86" name="access" description="public"/>
+          <tag line="86" name="return" description="" type="\mysql_field">
+            <type by_reference="false">\mysql_field</type>
+          </tag>
+        </docblock>
+        <argument line="116">
+          <name>$name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$table</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$max_length</name>
+          <default><![CDATA[11]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$not_null</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$primary_key</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$unique_key</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$multiple_key</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$numeric</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$blob</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$type</name>
+          <default><![CDATA['varchar']]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$unsigned</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+        <argument line="116">
+          <name>$zerofill</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_field.php</error>
+      <critical line="12" code="50019">No short description for property $name</critical>
+      <critical line="18" code="50019">No short description for property $table</critical>
+      <critical line="24" code="50019">No short description for property $max_length</critical>
+      <critical line="30" code="50019">No short description for property $not_null</critical>
+      <critical line="36" code="50019">No short description for property $primary_key</critical>
+      <critical line="42" code="50019">No short description for property $unique_key</critical>
+      <critical line="48" code="50019">No short description for property $multiple_key</critical>
+      <critical line="54" code="50019">No short description for property $numeric</critical>
+      <critical line="60" code="50019">No short description for property $blob</critical>
+      <critical line="66" code="50019">No short description for property $type</critical>
+      <critical line="72" code="50019">No short description for property $unsigned</critical>
+      <critical line="78" code="50019">No short description for property $zerofill</critical>
+      <error line="86" code="50012">No short description for method __construct()</error>
+    </parse_markers>
+  </file>
+  <file path="simple.php" hash="f8c5e0b145894fee29726650ff91d31e" package="Default">
+    <include line="5" type="Require Once" package="Default">
+      <name>mysql_connection.php</name>
+    </include>
+    <include line="6" type="Require Once" package="Default">
+      <name>mysql_command.php</name>
+    </include>
+    <include line="7" type="Require Once" package="Default">
+      <name>mysql_field.php</name>
+    </include>
+    <include line="8" type="Require Once" package="Default">
+      <name>mysql_table.php</name>
+    </include>
+    <include line="9" type="Require Once" package="Default">
+      <name>mysql_list_view.php</name>
+    </include>
+    <include line="10" type="Require Once" package="Default">
+      <name>mysql_report.php</name>
+    </include>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file simple.php</error>
+    </parse_markers>
+  </file>
+  <file path="mysql_connection.php" hash="41526c505b457c8a8ee22a1d42f5f2bb" package="Default">
+    <class final="false" abstract="false" namespace="global" line="15" package="phpkit">
+      <extends/>
+      <name>mysql_connection</name>
+      <full_name>\mysql_connection</full_name>
+      <docblock line="3">
+        <description><![CDATA[This class handles MySQL_Connect Function
+	Has an attribute Resource mysql_connection_link
+Contains the resource of the connection to mysql server]]></description>
+        <long-description><![CDATA[]]></long-description>
+        <tag line="3" name="package" description="phpkit"/>
+        <tag line="3" name="author" description="Alberto Miranda Dencowski &lt;alberto@fijatebien.net&gt;"/>
+        <tag line="3" name="since" description="0.0.1"/>
+        <tag line="3" name="licence" description="GPLv2"/>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="27" namespace="global" package="Default">
+        <name>$mysql_server</name>
+        <default><![CDATA["localhost"]]></default>
+        <docblock line="20">
+          <description><![CDATA[Mysql Server IP or Name]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="20" name="access" description="private"/>
+          <tag line="20" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="20" name="default" description="&quot;localhost&quot;"/>
+          <tag line="20" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="36" namespace="global" package="Default">
+        <name>$mysql_user</name>
+        <default><![CDATA["root"]]></default>
+        <docblock line="29">
+          <description><![CDATA[Mysql user name]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="29" name="access" description="private"/>
+          <tag line="29" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="29" name="default" description="&quot;root&quot;"/>
+          <tag line="29" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="45" namespace="global" package="Default">
+        <name>$mysql_password</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="38">
+          <description><![CDATA[Mysql user password]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="38" name="access" description="private"/>
+          <tag line="38" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="38" name="default" description="&quot;&quot;"/>
+          <tag line="38" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="54" namespace="global" package="Default">
+        <name>$mysql_database</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="47">
+          <description><![CDATA[Mysql database name]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="47" name="access" description="private"/>
+          <tag line="47" name="var" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="47" name="default" description="&quot;&quot;"/>
+          <tag line="47" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="63" namespace="global" package="Default">
+        <name>$mysql_connection_link</name>
+        <default><![CDATA[null]]></default>
+        <docblock line="56">
+          <description><![CDATA[Mysql connection link Resource]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="56" name="access" description="private"/>
+          <tag line="56" name="var" description="" type="Resource">
+            <type by_reference="false">Resource</type>
+          </tag>
+          <tag line="56" name="default" description="null"/>
+          <tag line="56" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="72" namespace="global" package="Default">
+        <name>$mysql_log_path</name>
+        <default><![CDATA["error_log"]]></default>
+        <docblock line="65">
+          <description><![CDATA[Mysql loggin path ["CURRENT_DIRECTORY"] / error_log]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="65" name="access" description="private"/>
+          <tag line="65" name="var" description="" type="String">
+            <type by_reference="false">String</type>
+          </tag>
+          <tag line="65" name="default" description="&quot;error_log&quot;"/>
+          <tag line="65" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="92" package="phpkit">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="74">
+          <description><![CDATA[Constructor Method for the class.]]></description>
+          <long-description><![CDATA[<p>Mysql_Connection
+        Note: This function doesn't call to mysql_connect
+        After construct you need to call the method &lt;connect()></p>]]></long-description>
+          <tag line="74" name="param" description="mysql_user_name Nombre de usuario para Mysql" type="string" variable="$mysql_user_name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="74" name="param" description="mysql_user_password Password para el usuario de mysql" type="string" variable="$mysql_user_password">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="74" name="param" description="mysql_server_name Server name, or IP" type="string" variable="$mysql_server_name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="74" name="param" description="mysql_database_name Mysql database name" type="string" variable="$mysql_database_name">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="74" name="return" description="" type="\phpkit::mysql_connection">
+            <type by_reference="false">\phpkit::mysql_connection</type>
+          </tag>
+          <tag line="74" name="access" description="public"/>
+        </docblock>
+        <argument line="92">
+          <name>$mysql_user_name</name>
+          <default><![CDATA["root"]]></default>
+          <type/>
+        </argument>
+        <argument line="92">
+          <name>$mysql_user_password</name>
+          <default><![CDATA[""]]></default>
+          <type/>
+        </argument>
+        <argument line="92">
+          <name>$mysql_server_name</name>
+          <default><![CDATA["localhost"]]></default>
+          <type/>
+        </argument>
+        <argument line="92">
+          <name>$mysql_database_name</name>
+          <default><![CDATA[""]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="113" package="phpkit">
+        <name>connect</name>
+        <full_name>connect</full_name>
+        <docblock line="107">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="107" name="return" description="" type="bool">
+            <type by_reference="false">bool</type>
+          </tag>
+          <tag line="107" name="access" description="public"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="141" package="phpkit">
+        <name>status</name>
+        <full_name>status</full_name>
+        <docblock line="135">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="135" name="return" description="" type="string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="135" name="access" description="public"/>
+        </docblock>
+        <argument line="141">
+          <name>$auto_print</name>
+          <default><![CDATA[false]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="160" package="phpkit">
+        <name>log</name>
+        <full_name>log</full_name>
+        <docblock line="153">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="153" name="param" description="exception" type="\Exception" variable="$ec">
+            <type by_reference="false">\Exception</type>
+          </tag>
+          <tag line="153" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+          <tag line="153" name="access" description="public"/>
+        </docblock>
+        <argument line="160">
+          <name>$ec</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="184" package="phpkit">
+        <name>delete_log_file</name>
+        <full_name>delete_log_file</full_name>
+        <docblock line="179">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="179" name="access" description="public"/>
+          <tag line="179" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="194" package="phpkit">
+        <name>read_log</name>
+        <full_name>read_log</full_name>
+        <docblock line="189">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="189" name="access" description="public"/>
+          <tag line="189" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="209" package="phpkit">
+        <name>close</name>
+        <full_name>close</full_name>
+        <docblock line="204">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="204" name="access" description="public"/>
+          <tag line="204" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_connection.php</error>
+      <error line="107" code="50012">No short description for method connect()</error>
+      <error line="135" code="50012">No short description for method status()</error>
+      <error line="135" code="50015">Argument $auto_print is missing from the Docblock of status()</error>
+      <error line="153" code="50012">No short description for method log()</error>
+      <error line="179" code="50012">No short description for method delete_log_file()</error>
+      <error line="189" code="50012">No short description for method read_log()</error>
+      <error line="204" code="50012">No short description for method close()</error>
+    </parse_markers>
+  </file>
+  <file path="mysql_table.php" hash="f958789d28bed255e91f68e9aca2d2d0" package="Default">
+    <class final="false" abstract="false" namespace="global" line="8" package="Default">
+      <extends/>
+      <name>mysql_table</name>
+      <full_name>\mysql_table</full_name>
+      <docblock line="4">
+        <description><![CDATA[class mysql_table]]></description>
+        <long-description><![CDATA[]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="17" namespace="global" package="Default">
+        <name>$name</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="13">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="13" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="23" namespace="global" package="Default">
+        <name>$literal_name</name>
+        <default><![CDATA[""]]></default>
+        <docblock line="19">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="19" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="29" namespace="global" package="Default">
+        <name>$fields</name>
+        <default><![CDATA[array()]]></default>
+        <docblock line="25">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="25" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+        <docblock line="31">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="31" name="access" description="public"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="37" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <argument line="37">
+          <name>$name</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="37">
+          <name>$li_name</name>
+          <default><![CDATA[""]]></default>
+          <type/>
+        </argument>
+        <argument line="37">
+          <name>$fields_arr</name>
+          <default><![CDATA[array()]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="48" package="Default">
+        <name>generate_sql</name>
+        <full_name>generate_sql</full_name>
+        <docblock line="43">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="43" name="access" description="public"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="69" package="Default">
+        <name>get</name>
+        <full_name>get</full_name>
+        <docblock line="65">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="65" name="access" description="public"/>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="96" package="Default">
+        <name>get_form</name>
+        <full_name>get_form</full_name>
+        <argument line="96">
+          <name>$method</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="96">
+          <name>$id</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="96">
+          <name>$class</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="123" package="Default">
+        <name>post</name>
+        <full_name>post</full_name>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="136" package="Default">
+        <name>validate_type</name>
+        <full_name>validate_type</full_name>
+        <argument line="136">
+          <name>$var</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="136">
+          <name>$type</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="152" package="Default">
+        <name>sanitize</name>
+        <full_name>sanitize</full_name>
+        <argument line="152">
+          <name>$string</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_table.php</error>
+      <critical line="13" code="50019">No short description for property $name</critical>
+      <critical line="19" code="50019">No short description for property $literal_name</critical>
+      <critical line="25" code="50019">No short description for property $fields</critical>
+      <critical line="31" code="50019">No short description for property $connection</critical>
+      <error line="37" code="50010">No DocBlock was found for method __construct()</error>
+      <error line="43" code="50012">No short description for method generate_sql()</error>
+      <error line="65" code="50012">No short description for method get()</error>
+      <error line="96" code="50010">No DocBlock was found for method get_form()</error>
+      <error line="123" code="50010">No DocBlock was found for method post()</error>
+      <error line="136" code="50010">No DocBlock was found for method validate_type()</error>
+      <error line="152" code="50010">No DocBlock was found for method sanitize()</error>
+    </parse_markers>
+  </file>
+  <file path="mysql_command.php" hash="108b2009f294aa8ac125f8c60bb1ae5e" package="Default">
+    <class final="false" abstract="false" namespace="global" line="9" package="Default">
+      <extends/>
+      <name>mysql_command</name>
+      <full_name>\mysql_command</full_name>
+      <docblock line="3">
+        <description><![CDATA[class mysql_command]]></description>
+        <long-description><![CDATA[<p>create by alberto</p>]]></long-description>
+      </docblock>
+      <property final="false" static="false" visibility="private" line="21" namespace="global" package="Default">
+        <name>$sql_string</name>
+        <default><![CDATA[]]></default>
+        <docblock line="16">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="16" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="27" namespace="global" package="Default">
+        <name>$mysql_query_id</name>
+        <default><![CDATA[null]]></default>
+        <docblock line="23">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="23" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="33" namespace="global" package="Default">
+        <name>$mysql_connection_obj</name>
+        <default><![CDATA[null]]></default>
+        <docblock line="29">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="29" name="access" description="private"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="private" line="41" namespace="global" package="Default">
+        <name>$command_type</name>
+        <default><![CDATA[]]></default>
+        <docblock line="35">
+          <description><![CDATA[If the query is for fetching data, yo must pass 1 in the construct method
+Else pass 0]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="35" name="access" description="private"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="56" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="45">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="45" name="param" description="sql_string" type="string" variable="$sql_string">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="45" name="param" description="connection" type="\mysql_connection" variable="$connection">
+            <type by_reference="false">\mysql_connection</type>
+          </tag>
+          <tag line="45" name="param" description="cmd_type" type="int" variable="$cmd_type">
+            <type by_reference="false">int</type>
+          </tag>
+          <tag line="45" name="access" description="public"/>
+          <tag line="45" name="return" description="" type="\mysql_command">
+            <type by_reference="false">\mysql_command</type>
+          </tag>
+        </docblock>
+        <argument line="56">
+          <name>$sql_string</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="56">
+          <name>$connection</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+        <argument line="56">
+          <name>$cmd_type</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="69" package="Default">
+        <name>exec</name>
+        <full_name>exec</full_name>
+        <docblock line="63">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="63" name="access" description="public"/>
+          <tag line="63" name="return" description="" type="bool">
+            <type by_reference="false">bool</type>
+          </tag>
+        </docblock>
+        <argument line="69">
+          <name>$sql_string</name>
+          <default><![CDATA[null]]></default>
+          <type/>
+        </argument>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="90" package="Default">
+        <name>fetch</name>
+        <full_name>fetch</full_name>
+        <docblock line="85">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="85" name="access" description="public"/>
+          <tag line="85" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="109" package="Default">
+        <name>fetch_fields</name>
+        <full_name>fetch_fields</full_name>
+        <docblock line="104">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="104" name="access" description="public"/>
+          <tag line="104" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="125" package="Default">
+        <name>fetch_one</name>
+        <full_name>fetch_one</full_name>
+        <docblock line="120">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="120" name="access" description="public"/>
+          <tag line="120" name="return" description="" type="array">
+            <type by_reference="false">array</type>
+          </tag>
+        </docblock>
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="135" package="Default">
+        <name>generate_report</name>
+        <full_name>generate_report</full_name>
+        <docblock line="130">
+          <description><![CDATA[]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="130" name="access" description="public"/>
+          <tag line="130" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+        </docblock>
+        <argument line="135">
+          <name>$fetch_data</name>
+          <default><![CDATA[]]></default>
+          <type/>
+        </argument>
+      </method>
+    </class>
+    <parse_markers>
+      <error line="0" code="50007">No page-level DocBlock was found in file mysql_command.php</error>
+      <critical line="16" code="50019">No short description for property $sql_string</critical>
+      <critical line="23" code="50019">No short description for property $mysql_query_id</critical>
+      <critical line="29" code="50019">No short description for property $mysql_connection_obj</critical>
+      <error line="45" code="50012">No short description for method __construct()</error>
+      <error line="63" code="50012">No short description for method exec()</error>
+      <error line="63" code="50015">Argument $sql_string is missing from the Docblock of exec()</error>
+      <error line="85" code="50012">No short description for method fetch()</error>
+      <error line="104" code="50012">No short description for method fetch_fields()</error>
+      <error line="120" code="50012">No short description for method fetch_one()</error>
+      <error line="130" code="50012">No short description for method generate_report()</error>
+      <error line="130" code="50015">Argument $fetch_data is missing from the Docblock of generate_report()</error>
+    </parse_markers>
+  </file>
+  <package name="Default" full_name="Default"/>
+  <package name="phpkit" full_name="phpkit"/>
+  <namespace name="global" full_name="global"/>
+  <marker count="0">todo</marker>
+  <marker count="0">fixme</marker>
+  <deprecated count="0"/>
+</project>
