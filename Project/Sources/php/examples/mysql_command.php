@@ -3,6 +3,8 @@
 /**
  *  class mysql_command
  * 
+ *  create by alberto
+ * 
  */
 class mysql_command {
 
