@@ -32,6 +32,9 @@
  * @licence GPLv2
  * 
  */
+ 
+namespace phpkit;
+ 
 class mysql_field {
     /** Aggregations: */
     /** Compositions: */

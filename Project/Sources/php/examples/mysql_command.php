@@ -33,6 +33,9 @@
  * @since 0.0.1
  * @licence GPLv2
  */
+ 
+namespace phpkit;
+ 
 class mysql_command {
 
     /** Aggregations: */
