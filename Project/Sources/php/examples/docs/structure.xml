@@ -1,457 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project version="2.0.0a10" title="">
-  <file path="mysql_list_view.php" hash="53d0b06ac99e9c51b7255cd68032e422" package="Default">
-    <class final="false" abstract="false" namespace="global" line="8" package="Default">
-      <extends/>
-      <name>mysql_list_view</name>
-      <full_name>\mysql_list_view</full_name>
-      <docblock line="4">
-        <description><![CDATA[class mysql_table]]></description>
-        <long-description><![CDATA[]]></long-description>
-      </docblock>
-      <property final="false" static="false" visibility="private" line="17" namespace="global" package="Default">
-        <name>$name</name>
-        <default><![CDATA[""]]></default>
-        <docblock line="13">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="13" name="access" description="private"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="private" line="23" namespace="global" package="Default">
-        <name>$columns</name>
-        <default><![CDATA[3]]></default>
-        <docblock line="19">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="19" name="access" description="private"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="private" line="29" namespace="global" package="Default">
-        <name>$per_page</name>
-        <default><![CDATA[10]]></default>
-        <docblock line="25">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="25" name="access" description="private"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="private" line="35" namespace="global" package="Default">
-        <name>$primary_label</name>
-        <default><![CDATA[]]></default>
-        <docblock line="31">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="31" name="access" description="private"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="41" namespace="global" package="Default">
-        <name>$res</name>
-        <default><![CDATA[]]></default>
-        <docblock line="37">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="37" name="access" description="public"/>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="57" package="Default">
-        <name>__construct</name>
-        <full_name>__construct</full_name>
-        <docblock line="43">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="43" name="param" description="resource" type="\mysql_command" variable="$resource">
-            <type by_reference="false">\mysql_command</type>
-          </tag>
-          <tag line="43" name="param" description="name" type="string" variable="$name">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="43" name="param" description="columns" type="int" variable="$columns">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="43" name="param" description="per_page" type="int" variable="$per_page">
-            <type by_reference="false">int</type>
-          </tag>
-          <tag line="43" name="param" description="primary_label" type="string" variable="$primary_label">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="43" name="access" description="public"/>
-        </docblock>
-        <argument line="57">
-          <name>$resource</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-        <argument line="57">
-          <name>$name</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-        <argument line="57">
-          <name>$columns</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-        <argument line="57">
-          <name>$per_page</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-        <argument line="57">
-          <name>$primary_label</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="69" package="Default">
-        <name>generate_list_view</name>
-        <full_name>generate_list_view</full_name>
-        <docblock line="65">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="65" name="access" description="public"/>
-        </docblock>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_list_view.php</error>
-      <critical line="13" code="50019">No short description for property $name</critical>
-      <critical line="19" code="50019">No short description for property $columns</critical>
-      <critical line="25" code="50019">No short description for property $per_page</critical>
-      <critical line="31" code="50019">No short description for property $primary_label</critical>
-      <critical line="37" code="50019">No short description for property $res</critical>
-      <error line="43" code="50012">No short description for method __construct()</error>
-      <error line="65" code="50012">No short description for method generate_list_view()</error>
-    </parse_markers>
-  </file>
-  <file path="mysql_report.php" hash="a5abdb96368c3e2d5123a880d611b9f3" package="Default">
-    <class final="false" abstract="false" namespace="global" line="9" package="Default">
-      <extends/>
-      <name>mysql_report</name>
-      <full_name>\mysql_report</full_name>
-      <property final="false" static="false" visibility="public" line="14" namespace="global" package="Default">
-        <name>$mysql_command</name>
-        <default><![CDATA[]]></default>
-        <docblock line="11">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="11" name="access" description="public"/>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="20" package="Default">
-        <name>__construct</name>
-        <full_name>__construct</full_name>
-        <docblock line="16">
-          <description><![CDATA[]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="16" name="access" description="public"/>
-        </docblock>
-        <argument line="20">
-          <name>$command</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-        <argument line="20">
-          <name>$table</name>
-          <default><![CDATA[]]></default>
-          <type/>
-        </argument>
-      </method>
-    </class>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_report.php</error>
-      <error line="9" code="50000">No DocBlock was found for \mysql_report</error>
-      <critical line="11" code="50019">No short description for property $mysql_command</critical>
-      <error line="16" code="50012">No short description for method __construct()</error>
-      <error line="16" code="50015">Argument $command is missing from the Docblock of __construct()</error>
-      <error line="16" code="50015">Argument $table is missing from the Docblock of __construct()</error>
-    </parse_markers>
-  </file>
-  <file path="mysql_field.php" hash="a1e6ab4847acb0d976a1f874f08cc930" package="Default">
-    <class final="false" abstract="false" namespace="global" line="13" package="phpkit\mysql">
+<project version="2.0.0a10" title="PHPKit Toolkit">
+  <file path="mysql_field.php" hash="d89908e06711fcca6884d637f42f3adb" package="phpkit">
+    <docblock line="2">
+      <description><![CDATA[mysql_field.php]]></description>
+      <long-description><![CDATA[<p>Copyright 2012 Alberto Miranda &lt;alberto@alberto-Aspire-V3-571></p>
+
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.</p>]]></long-description>
+      <tag line="2" name="package" description="phpkit"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="phpkit" line="38" package="Default">
       <extends/>
       <name>mysql_field</name>
-      <full_name>\mysql_field</full_name>
-      <docblock line="3">
-        <description><![CDATA[This class is mysql field class for constructing phpkit::mysql_tables objects]]></description>
-        <long-description><![CDATA[]]></long-description>
-        <tag line="3" name="package" description="phpkit"/>
-        <tag line="3" name="subpackage" description="mysql"/>
-        <tag line="3" name="since" description="0.0.1"/>
-        <tag line="3" name="author" description="Alberto Miranda Dencowski &lt;alberto@fijatebien.net&gt;"/>
-        <tag line="3" name="licence" description="GPLv2"/>
-      </docblock>
-      <property final="false" static="false" visibility="public" line="26" namespace="global" package="Default">
+      <full_name>\phpkit\mysql_field</full_name>
+      <property final="false" static="false" visibility="public" line="51" namespace="phpkit" package="Default">
         <name>$name</name>
         <default><![CDATA[]]></default>
-        <docblock line="18">
+        <docblock line="43">
           <description><![CDATA[The name of the field]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="18" name="access" description="private"/>
-          <tag line="18" name="var" description="" type="String">
+          <tag line="43" name="access" description="private"/>
+          <tag line="43" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="18" name="default" description="&quot;&quot;"/>
-          <tag line="18" name="since" description="0.0.1"/>
+          <tag line="43" name="default" description="&quot;&quot;"/>
+          <tag line="43" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="35" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="60" namespace="phpkit" package="Default">
         <name>$table</name>
         <default><![CDATA[""]]></default>
-        <docblock line="28">
+        <docblock line="53">
           <description><![CDATA[The name of the table for]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="28" name="access" description="private"/>
-          <tag line="28" name="var" description="" type="String">
+          <tag line="53" name="access" description="private"/>
+          <tag line="53" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="28" name="default" description="&quot;&quot;"/>
-          <tag line="28" name="since" description="0.0.1"/>
+          <tag line="53" name="default" description="&quot;&quot;"/>
+          <tag line="53" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="44" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="69" namespace="phpkit" package="Default">
         <name>$max_length</name>
         <default><![CDATA[11]]></default>
-        <docblock line="37">
+        <docblock line="62">
           <description><![CDATA[The max length of the field]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="37" name="access" description="private"/>
-          <tag line="37" name="var" description="" type="int">
+          <tag line="62" name="access" description="private"/>
+          <tag line="62" name="var" description="" type="int">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="37" name="default" description="11"/>
-          <tag line="37" name="since" description="0.0.1"/>
+          <tag line="62" name="default" description="11"/>
+          <tag line="62" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="53" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="78" namespace="phpkit" package="Default">
         <name>$not_null</name>
         <default><![CDATA[false]]></default>
-        <docblock line="46">
+        <docblock line="71">
           <description><![CDATA[Boolean attr defines if the field can be leaved null]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="46" name="access" description="private"/>
-          <tag line="46" name="var" description="" type="bool">
+          <tag line="71" name="access" description="private"/>
+          <tag line="71" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="46" name="default" description="false"/>
-          <tag line="46" name="since" description="0.0.1"/>
+          <tag line="71" name="default" description="false"/>
+          <tag line="71" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="62" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="87" namespace="phpkit" package="Default">
         <name>$primary_key</name>
         <default><![CDATA[false]]></default>
-        <docblock line="55">
+        <docblock line="80">
           <description><![CDATA[Boolean attr defines if the field is primary key in the table]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="55" name="access" description="private"/>
-          <tag line="55" name="var" description="" type="bool">
+          <tag line="80" name="access" description="private"/>
+          <tag line="80" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="55" name="default" description="false"/>
-          <tag line="55" name="since" description="0.0.1"/>
+          <tag line="80" name="default" description="false"/>
+          <tag line="80" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="71" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="96" namespace="phpkit" package="Default">
         <name>$unique_key</name>
         <default><![CDATA[false]]></default>
-        <docblock line="64">
+        <docblock line="89">
           <description><![CDATA[Boolean attr defines if the field is unique key in the table]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="64" name="access" description="private"/>
-          <tag line="64" name="var" description="" type="bool">
+          <tag line="89" name="access" description="private"/>
+          <tag line="89" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="64" name="default" description="false"/>
-          <tag line="64" name="since" description="0.0.1"/>
+          <tag line="89" name="default" description="false"/>
+          <tag line="89" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="80" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="105" namespace="phpkit" package="Default">
         <name>$multiple_key</name>
         <default><![CDATA[false]]></default>
-        <docblock line="73">
+        <docblock line="98">
           <description><![CDATA[Boolean attr defines if the field is multiple key in the table]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="73" name="access" description="private"/>
-          <tag line="73" name="var" description="" type="bool">
+          <tag line="98" name="access" description="private"/>
+          <tag line="98" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="73" name="default" description="false"/>
-          <tag line="73" name="since" description="0.0.1"/>
+          <tag line="98" name="default" description="false"/>
+          <tag line="98" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="89" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="114" namespace="phpkit" package="Default">
         <name>$numeric</name>
         <default><![CDATA[false]]></default>
-        <docblock line="82">
+        <docblock line="107">
           <description><![CDATA[Boolean attr defines if the field is numeric]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="82" name="access" description="private"/>
-          <tag line="82" name="var" description="" type="bool">
+          <tag line="107" name="access" description="private"/>
+          <tag line="107" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="82" name="default" description="false"/>
-          <tag line="82" name="since" description="0.0.1"/>
+          <tag line="107" name="default" description="false"/>
+          <tag line="107" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="98" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="123" namespace="phpkit" package="Default">
         <name>$blob</name>
         <default><![CDATA[false]]></default>
-        <docblock line="91">
+        <docblock line="116">
           <description><![CDATA[Boolean attr defines if the field is a blob]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="91" name="access" description="private"/>
-          <tag line="91" name="var" description="" type="bool">
+          <tag line="116" name="access" description="private"/>
+          <tag line="116" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="91" name="default" description="false"/>
-          <tag line="91" name="since" description="0.0.1"/>
+          <tag line="116" name="default" description="false"/>
+          <tag line="116" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="107" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="132" namespace="phpkit" package="Default">
         <name>$type</name>
         <default><![CDATA["int"]]></default>
-        <docblock line="100">
+        <docblock line="125">
           <description><![CDATA[String determines the field type]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="100" name="access" description="private"/>
-          <tag line="100" name="var" description="" type="string">
+          <tag line="125" name="access" description="private"/>
+          <tag line="125" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="100" name="default" description="&quot;int&quot;"/>
-          <tag line="100" name="since" description="0.0.1"/>
+          <tag line="125" name="default" description="&quot;int&quot;"/>
+          <tag line="125" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="116" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="141" namespace="phpkit" package="Default">
         <name>$unsigned</name>
         <default><![CDATA[false]]></default>
-        <docblock line="109">
+        <docblock line="134">
           <description><![CDATA[This attr defines if the integer field will have sing (for ex.]]></description>
           <long-description><![CDATA[<p>-9)</p>]]></long-description>
-          <tag line="109" name="access" description="private"/>
-          <tag line="109" name="var" description="" type="bool">
+          <tag line="134" name="access" description="private"/>
+          <tag line="134" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="109" name="default" description="false"/>
-          <tag line="109" name="since" description="0.0.1"/>
+          <tag line="134" name="default" description="false"/>
+          <tag line="134" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="125" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="150" namespace="phpkit" package="Default">
         <name>$zerofill</name>
         <default><![CDATA[false]]></default>
-        <docblock line="118">
+        <docblock line="143">
           <description><![CDATA[This attr defines if the integer field will be zerofilled (For ex.]]></description>
           <long-description><![CDATA[<p>123 to 0000000123)</p>]]></long-description>
-          <tag line="118" name="access" description="private"/>
-          <tag line="118" name="var" description="" type="bool">
+          <tag line="143" name="access" description="private"/>
+          <tag line="143" name="var" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="118" name="default" description="false"/>
-          <tag line="118" name="since" description="0.0.1"/>
+          <tag line="143" name="default" description="false"/>
+          <tag line="143" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="159" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="184" package="Default">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="129">
+        <docblock line="154">
           <description><![CDATA[Construct Method for mysql_field class]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="129" name="param" description="name" type="string" variable="$name">
+          <tag line="154" name="param" description="name" type="string" variable="$name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="129" name="param" description="table" type="string" variable="$table">
+          <tag line="154" name="param" description="table" type="string" variable="$table">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="129" name="param" description="max_length" type="int" variable="$max_length">
+          <tag line="154" name="param" description="max_length" type="int" variable="$max_length">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="129" name="param" description="not_null" type="bool" variable="$not_null">
+          <tag line="154" name="param" description="not_null" type="bool" variable="$not_null">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="primary_key" type="bool" variable="$primary_key">
+          <tag line="154" name="param" description="primary_key" type="bool" variable="$primary_key">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="unique_key" type="bool" variable="$unique_key">
+          <tag line="154" name="param" description="unique_key" type="bool" variable="$unique_key">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="multiple_key" type="bool" variable="$multiple_key">
+          <tag line="154" name="param" description="multiple_key" type="bool" variable="$multiple_key">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="numeric" type="bool" variable="$numeric">
+          <tag line="154" name="param" description="numeric" type="bool" variable="$numeric">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="blob" type="bool" variable="$blob">
+          <tag line="154" name="param" description="blob" type="bool" variable="$blob">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="type" type="bool" variable="$type">
+          <tag line="154" name="param" description="type" type="bool" variable="$type">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="unsigned" type="bool" variable="$unsigned">
+          <tag line="154" name="param" description="unsigned" type="bool" variable="$unsigned">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="param" description="zerofill" type="bool" variable="$zerofill">
+          <tag line="154" name="param" description="zerofill" type="bool" variable="$zerofill">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="129" name="access" description="public"/>
-          <tag line="129" name="return" description="" type="\mysql_field">
-            <type by_reference="false">\mysql_field</type>
+          <tag line="154" name="access" description="public"/>
+          <tag line="154" name="return" description="" type="\phpkit\mysql_field">
+            <type by_reference="false">\phpkit\mysql_field</type>
           </tag>
         </docblock>
-        <argument line="160">
+        <argument line="185">
           <name>$name</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$table</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$max_length</name>
           <default><![CDATA[11]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$not_null</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$primary_key</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$unique_key</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$multiple_key</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$numeric</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$blob</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$type</name>
           <default><![CDATA['varchar']]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$unsigned</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
-        <argument line="160">
+        <argument line="185">
           <name>$zerofill</name>
           <default><![CDATA[false]]></default>
           <type/>
@@ -459,402 +303,418 @@
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_field.php</error>
+      <error line="38" code="50000">No DocBlock was found for \phpkit\mysql_field</error>
     </parse_markers>
+    <source>eJzFV21PGzkQ/kx+xag6qYA2IQFVpyOFknKEIvGmJFzFJ+RsZhMXx97a3tDc6f77jb0v2bAJhWtFEZDseDzzzDPj8ez7D/Ekru1sb9dgG6Zz81XcRRzFqOHEJHJ/xyqeaz6eWNhttnahI4aorYILrpkcMXjPUsFR9lnvmJhrrP+1V3/3e+swtzKYcAOxVmPNpkBfI40IRkX2gWlsw1wlEDIJGkfcWM2HiUXgFsjFjtIwVSMezZ0dkiVyhBrsBMGinhpQkX84vbyBU5SomYDrZCh4COc8RGkQGLl2EjPBEQy9Hbej6zD0MwzQVWSYWa5kG5DTuoYZakPPsJv7yAwGoLQzssmsQ65BxW7fFsGdg2B2sbWxLv5FmCPg0hufqJhCmpBNCvKBCwFDhMRglIjAmSBl+Hw2+HR1M4DO5S187vR6ncvBbZuU7UTRKs4wNcWnseBkmQKjLNk54XcWLk56x59oS+fj2fnZ4JaigO7Z4PKk34fuVQ86cN3pDc6Ob847Pbi+6V1f9U8aAH10sNAZeILjyKeJeByhZVyYIvJbSq0heGIEEzZDSnGIfEbgGIRUWt9PnzPChJJjHycpL5hsA49AKhvAg+ZUMVSXlcS67YvcBnAmw0YA71qkxeS9IPL7lvTJRpdHZL8rlNIBfFTGkrqnrQPN3VarWW/tNVsB3PQ7RXBHMQvv2RiBDsw9t5l4JztSGz7roWDGuJz7Awb+gGVCR1qoJJVCElpOEaZm9vfTs2jZUCAV+PALhtaQwTUuj0wyzKV+ZyrkMkRoNpqNln9mCVWJrhzgP1GG6sHc88VRjvgXKuIhR9mQaP0ZPhIuGWTv9Pp8tlvECTXJpmjIeY6nTbI0uFI/gX9qQD/ECnTGY41jnwuz701kC8dqGivDHy+4/+SNNtrswLjVbaeQb61lOgNKvYOTl5R3nS8esTBE4yqHzyi4Qjxj2hWAI7+QjTBiibDw5k0hWiLTy7KPFGecVuxvzn37u8B8Xl3ynw/uZdiWQaXuDmjLamhT9g0EyjEV/0uZ49JWkLVaz0ZGnu8yzwe0rwrvo1IC6V5glHzqLBGXdB54CaS/NahPkpbrKTIR4jm4h2S3AjxiwuCzsVPbuXPuCLnf+H/A+07Gp0zP4R7n+UXg8/VKUWTu75z7Hwskkfxrgr8qjtT7TwhjSr55LH5ZILn/nxCKTKaoefha5yH19oOYGQyFGr4SZOdqPd7sVqB5hsZMD3aB1M7jZxWEWdO8qW++oH+TM9e+3aZVHdzRtoJTUscxjaIpYj9Q+gHMuKg23eiB3xpQ/2MLXonuRBo+ltSl11L+klio6f+NWkX0nUxudrN4Wrt7bgxspj/09Grh5Wgq4WUGtuk1gcZbP+CsmWA2No7zaRAukMa1UTpXlyYpP1stjyBuJHSvFWmx+UkjX1mtsdTPHqkQ07C4ltcoObYgvwCf0ildL0+pLbr3U1rl1vgksOW+t0ql3GRWrZfP92rAaSk/pZPXQ0UnL0NfN4VUo020LOd6VZVFiQxdBcHdXfHisOkV/OwZZNNeUJmtgurEEqy8/oNVl2mw+mIKKm0/WO6qQdG93tIpCydMvw2qjSCoHh4f0ha9N6QkuPjci1/90M/RB/mk/Wgxn3RTEirLS5SUCKoolpgqWKsoLXNXprKiukRoid4qwmWSl0ivoiyoz7NQUcly4XNSZSvNjM/QCshFjop8VZRKWSsyuFDa2YFeWtROuxBnhe5NpMr/1mr0S+ooR+4VpHwGPhzW/gNX+F6t</source>
   </file>
-  <file path="simple.php" hash="e0c2c15f650d632a4b33c75052db4534" package="Default">
-    <include line="6" type="Require Once" package="Default">
+  <file path="simple.php" hash="8bae5f973f086d60dc91438213d86044" package="phpkit">
+    <docblock line="2">
+      <description><![CDATA[simple.php]]></description>
+      <long-description><![CDATA[<p>Copyright 2012 Alberto Miranda &lt;alberto@alberto-Aspire-V3-571></p>
+
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.</p>]]></long-description>
+      <tag line="2" name="package" description="phpkit"/>
+    </docblock>
+    <include line="32" type="Require Once" package="Default">
       <name>mysql_connection.php</name>
-      <docblock line="2">
-        <description><![CDATA[Created by alberto]]></description>
-        <long-description><![CDATA[]]></long-description>
-        <tag line="2" name="example" description=""/>
-      </docblock>
     </include>
-    <include line="7" type="Require Once" package="Default">
+    <include line="33" type="Require Once" package="Default">
       <name>mysql_command.php</name>
     </include>
-    <include line="8" type="Require Once" package="Default">
+    <include line="34" type="Require Once" package="Default">
       <name>mysql_field.php</name>
     </include>
-    <include line="9" type="Require Once" package="Default">
+    <include line="35" type="Require Once" package="Default">
       <name>mysql_table.php</name>
     </include>
-    <include line="10" type="Require Once" package="Default">
-      <name>mysql_list_view.php</name>
-    </include>
-    <include line="11" type="Require Once" package="Default">
-      <name>mysql_report.php</name>
-    </include>
-    <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file simple.php</error>
-    </parse_markers>
+    <source>eJyNVH9v2kgQ/d+fYs5qhRNBiOlV1Qni1KWQINEkAnNRdDqhxYzxKutdd3edlH76mzW/kuZyOQTGO/vmzZuZne2dl3nptY+PPTgGw4tS4Imz0Mr9+qpca77KLXROww7EYoHaKvjGNZNLBj22MXze/rdiU3KNrT8/tD5+CqMdS5JzA6VWK80KoNdMI4JRmX1kGruwVhWkTILGJTdW80VlEbgFCtFWGgq15Nna8ZCtkkvUYHMEi7owoLJ6cXE1gwuUqJmAm2oheApjnqI0CIxCO4vJcQmLmsd5DJ2G6VYDDBURM8uV7AJy2tfwgNrQGjq7GFvCJijtSAJmnXINqnR+RyR3DYLZg+vJa/kf0lwClzV5rkpKKSdOSvKRCwELhMpgVommoyAw3I6Sy+tZAvHVHdzGk0l8ldx1CWxzRbv4gBsq10ROzJQYdcmuSb9j+DaY9C/JJf4yGo+SO8oChqPkajCdwvB6AjHcxJNk1J+N4wnczCY319PBCcAUnSx0BP9R46xuE9VxiZZxYfaZ31FrDckTS8jZA1KLU+QPJI5BSkfr7fY5EiaUXNV5EvhQyS7wDKSyTXjUnE4MncsXjXXuh942YSTTkyZ8DAnF5L2g4k8t4YljyDPiHwqldBO+KGMJXpcthtNOGJ62wg+nYRNm03if3OeSpfdshUADc8/t1tzeTVNfI7P1mYPteNRO+IO5KauR4ElWoCGeHUnX8zR+r2iI5kqSNQC/WJvvYp4qKTF1Wbj59OGo+yqwKGhy3kBlHMVbGMsWm9ugxnjvinV/LwLOQOIj/Kot8LVS1m+C//unsPNHuHm6tVApEznV1S2yquBWLZX/grcVbcmC7VbiRDyLVssK/JKtuGSmpmi3NzNGX7pH6guDp3XLPY8OSfAbNwZt8G5+MUj+apSNv4+OPKDPwUARGhTZstSqhos8+kqmXfxWZJjklv/EpxwbgRM0dAuk+EtF6iYE/nQwHvQT6numVQFbzXB7OZgMoA7RoEiNLhXlWRmaEDp6gKcBWhHgD0ypQfu9Md0kG51PURnaNKdm4g5J84kszYO9S2zc68hiAa4SmOYqOFhei0wn41/z8f+XoJ2YTTC/V4modnxNHspqL7DUXNrMeQke9RjkGrOzxnl59t40ovem12ZRr01bdR23jq1o9PXZMuG2EmruDHXYnZD2TsnLrFf1pWRxrrFU2h4UOvR5BN4/GbpHDg==</source>
   </file>
-  <file path="mysql_connection.php" hash="39288ce48e83e0e0089a680198ac60da" package="Default">
-    <class final="false" abstract="false" namespace="global" line="16" package="phpkit\mysql">
+  <file path="mysql_connection.php" hash="46be4aebd0a8dfee4ea4af1e0bcc6ed2" package="phpkit">
+    <docblock line="2">
+      <description><![CDATA[mysql_connection.php]]></description>
+      <long-description><![CDATA[<p>Copyright 2012 Alberto Miranda &lt;alberto@alberto-Aspire-V3-571></p>
+
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.</p>]]></long-description>
+      <tag line="2" name="package" description="phpkit"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="phpkit" line="42" package="Default">
       <extends/>
       <name>mysql_connection</name>
-      <full_name>\mysql_connection</full_name>
-      <docblock line="3">
-        <description><![CDATA[This class handles MySQL_Connect Function
-	Has an attribute Resource mysql_connection_link
-Contains the resource of the connection to mysql server]]></description>
-        <long-description><![CDATA[]]></long-description>
-        <tag line="3" name="package" description="phpkit"/>
-        <tag line="3" name="subpackage" description="mysql"/>
-        <tag line="3" name="author" description="Alberto Miranda Dencowski &lt;alberto@fijatebien.net&gt;"/>
-        <tag line="3" name="since" description="0.0.1"/>
-        <tag line="3" name="licence" description="GPLv2"/>
-      </docblock>
-      <property final="false" static="false" visibility="private" line="28" namespace="global" package="Default">
+      <full_name>\phpkit\mysql_connection</full_name>
+      <property final="false" static="false" visibility="private" line="54" namespace="phpkit" package="Default">
         <name>$mysql_server</name>
         <default><![CDATA["localhost"]]></default>
-        <docblock line="21">
+        <docblock line="47">
           <description><![CDATA[Mysql Server IP or Name]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="21" name="access" description="private"/>
-          <tag line="21" name="var" description="" type="string">
+          <tag line="47" name="access" description="private"/>
+          <tag line="47" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="21" name="default" description="&quot;localhost&quot;"/>
-          <tag line="21" name="since" description="0.0.1"/>
+          <tag line="47" name="default" description="&quot;localhost&quot;"/>
+          <tag line="47" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="37" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="63" namespace="phpkit" package="Default">
         <name>$mysql_user</name>
         <default><![CDATA["root"]]></default>
-        <docblock line="30">
+        <docblock line="56">
           <description><![CDATA[Mysql user name]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="30" name="access" description="private"/>
-          <tag line="30" name="var" description="" type="string">
+          <tag line="56" name="access" description="private"/>
+          <tag line="56" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="30" name="default" description="&quot;root&quot;"/>
-          <tag line="30" name="since" description="0.0.1"/>
+          <tag line="56" name="default" description="&quot;root&quot;"/>
+          <tag line="56" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="46" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="72" namespace="phpkit" package="Default">
         <name>$mysql_password</name>
         <default><![CDATA[""]]></default>
-        <docblock line="39">
+        <docblock line="65">
           <description><![CDATA[Mysql user password]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="39" name="access" description="private"/>
-          <tag line="39" name="var" description="" type="string">
+          <tag line="65" name="access" description="private"/>
+          <tag line="65" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="39" name="default" description="&quot;&quot;"/>
-          <tag line="39" name="since" description="0.0.1"/>
+          <tag line="65" name="default" description="&quot;&quot;"/>
+          <tag line="65" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="55" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="81" namespace="phpkit" package="Default">
         <name>$mysql_database</name>
         <default><![CDATA[""]]></default>
-        <docblock line="48">
+        <docblock line="74">
           <description><![CDATA[Mysql database name]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="48" name="access" description="private"/>
-          <tag line="48" name="var" description="" type="string">
+          <tag line="74" name="access" description="private"/>
+          <tag line="74" name="var" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="48" name="default" description="&quot;&quot;"/>
-          <tag line="48" name="since" description="0.0.1"/>
+          <tag line="74" name="default" description="&quot;&quot;"/>
+          <tag line="74" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="64" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="90" namespace="phpkit" package="Default">
         <name>$mysql_connection_link</name>
         <default><![CDATA[null]]></default>
-        <docblock line="57">
+        <docblock line="83">
           <description><![CDATA[Mysql connection link Resource]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="57" name="access" description="private"/>
-          <tag line="57" name="var" description="" type="Resource">
+          <tag line="83" name="access" description="private"/>
+          <tag line="83" name="var" description="" type="Resource">
             <type by_reference="false">Resource</type>
           </tag>
-          <tag line="57" name="default" description="null"/>
-          <tag line="57" name="since" description="0.0.1"/>
+          <tag line="83" name="default" description="null"/>
+          <tag line="83" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="73" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="99" namespace="phpkit" package="Default">
         <name>$mysql_log_path</name>
         <default><![CDATA["error_log"]]></default>
-        <docblock line="66">
+        <docblock line="92">
           <description><![CDATA[Mysql loggin path ["CURRENT_DIRECTORY"] / error_log]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="66" name="access" description="private"/>
-          <tag line="66" name="var" description="" type="String">
+          <tag line="92" name="access" description="private"/>
+          <tag line="92" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="66" name="default" description="&quot;error_log&quot;"/>
-          <tag line="66" name="since" description="0.0.1"/>
+          <tag line="92" name="default" description="&quot;error_log&quot;"/>
+          <tag line="92" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="93" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="119" package="Default">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="75">
+        <docblock line="101">
           <description><![CDATA[Constructor Method for the class.]]></description>
           <long-description><![CDATA[<p>Mysql_Connection
         Note: This function doesn't call to mysql_connect
         After construct you need to call the method &lt;connect()></p>]]></long-description>
-          <tag line="75" name="param" description="mysql_user_name Nombre de usuario para Mysql" type="string" variable="$mysql_user_name">
+          <tag line="101" name="param" description="mysql_user_name Nombre de usuario para Mysql" type="string" variable="$mysql_user_name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="75" name="param" description="mysql_user_password Password para el usuario de mysql" type="string" variable="$mysql_user_password">
+          <tag line="101" name="param" description="mysql_user_password Password para el usuario de mysql" type="string" variable="$mysql_user_password">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="75" name="param" description="mysql_server_name Server name, or IP" type="string" variable="$mysql_server_name">
+          <tag line="101" name="param" description="mysql_server_name Server name, or IP" type="string" variable="$mysql_server_name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="75" name="param" description="mysql_database_name Mysql database name" type="string" variable="$mysql_database_name">
+          <tag line="101" name="param" description="mysql_database_name Mysql database name" type="string" variable="$mysql_database_name">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="75" name="return" description="" type="\phpkit::mysql_connection">
-            <type by_reference="false">\phpkit::mysql_connection</type>
+          <tag line="101" name="return" description="" type="\phpkit\phpkit::mysql_connection">
+            <type by_reference="false">\phpkit\phpkit::mysql_connection</type>
           </tag>
-          <tag line="75" name="access" description="public"/>
+          <tag line="101" name="access" description="public"/>
         </docblock>
-        <argument line="93">
+        <argument line="119">
           <name>$mysql_user_name</name>
           <default><![CDATA["root"]]></default>
           <type/>
         </argument>
-        <argument line="93">
+        <argument line="119">
           <name>$mysql_user_password</name>
           <default><![CDATA[""]]></default>
           <type/>
         </argument>
-        <argument line="93">
+        <argument line="119">
           <name>$mysql_server_name</name>
           <default><![CDATA["localhost"]]></default>
           <type/>
         </argument>
-        <argument line="93">
+        <argument line="119">
           <name>$mysql_database_name</name>
           <default><![CDATA[""]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="115" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="141" package="Default">
         <name>connect</name>
         <full_name>connect</full_name>
-        <docblock line="108">
+        <docblock line="134">
           <description><![CDATA[Connect to mysql method]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="108" name="return" description="" type="bool">
+          <tag line="134" name="return" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="108" name="access" description="public"/>
-          <tag line="108" name="since" description="0.0.1"/>
+          <tag line="134" name="access" description="public"/>
+          <tag line="134" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="145" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="171" package="Default">
         <name>status</name>
         <full_name>status</full_name>
-        <docblock line="137">
+        <docblock line="163">
           <description><![CDATA[Return musql_stat function result]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="137" name="param" description="bool" type="\auto_print" variable="$auto_print">
-            <type by_reference="false">\auto_print</type>
+          <tag line="163" name="param" description="bool" type="\phpkit\auto_print" variable="$auto_print">
+            <type by_reference="false">\phpkit\auto_print</type>
           </tag>
-          <tag line="137" name="return" description="" type="string">
+          <tag line="163" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="137" name="access" description="public"/>
-          <tag line="137" name="since" description="0.0.1"/>
+          <tag line="163" name="access" description="public"/>
+          <tag line="163" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="145">
+        <argument line="171">
           <name>$auto_print</name>
           <default><![CDATA[false]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="165" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="191" package="Default">
         <name>log</name>
         <full_name>log</full_name>
-        <docblock line="157">
+        <docblock line="183">
           <description><![CDATA[Error loggin method]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="157" name="param" description="exception" type="\Exception" variable="$ec">
-            <type by_reference="false">\Exception</type>
+          <tag line="183" name="param" description="exception" type="\phpkit\Exception" variable="$ec">
+            <type by_reference="false">\phpkit\Exception</type>
           </tag>
-          <tag line="157" name="return" description="" type="void">
+          <tag line="183" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="157" name="access" description="public"/>
-          <tag line="157" name="since" description="0.0.1"/>
+          <tag line="183" name="access" description="public"/>
+          <tag line="183" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="165">
+        <argument line="191">
           <name>$ec</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="190" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="216" package="Default">
         <name>delete_log_file</name>
         <full_name>delete_log_file</full_name>
-        <docblock line="184">
+        <docblock line="210">
           <description><![CDATA[Deletes the log file]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="184" name="access" description="public"/>
-          <tag line="184" name="return" description="" type="void">
+          <tag line="210" name="access" description="public"/>
+          <tag line="210" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="184" name="since" description="0.0.1"/>
+          <tag line="210" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="201" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="227" package="Default">
         <name>read_log</name>
         <full_name>read_log</full_name>
-        <docblock line="195">
+        <docblock line="221">
           <description><![CDATA[Read and uncompress the log file]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="195" name="access" description="public"/>
-          <tag line="195" name="return" description="" type="void">
+          <tag line="221" name="access" description="public"/>
+          <tag line="221" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="195" name="since" description="0.0.1"/>
+          <tag line="221" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="217" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="243" package="Default">
         <name>close</name>
         <full_name>close</full_name>
-        <docblock line="211">
+        <docblock line="237">
           <description><![CDATA[Method to close the mysql_connection_link]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="211" name="access" description="public"/>
-          <tag line="211" name="return" description="" type="void">
+          <tag line="237" name="access" description="public"/>
+          <tag line="237" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="211" name="since" description="0.0.1"/>
+          <tag line="237" name="since" description="0.0.1"/>
         </docblock>
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_connection.php</error>
+      <error line="42" code="50000">No DocBlock was found for \phpkit\mysql_connection</error>
     </parse_markers>
+    <source>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</source>
   </file>
-  <file path="mysql_table.php" hash="91d52b8fd53ebbdd869f1f3f53a9cb7b" package="Default">
-    <class final="false" abstract="false" namespace="global" line="13" package="phpkit\mysql">
+  <file path="mysql_table.php" hash="3e60acab645ce3990fae797544afcff0" package="phpkit">
+    <docblock line="2">
+      <description><![CDATA[mysql_table.php]]></description>
+      <long-description><![CDATA[<p>Copyright 2012 Alberto Miranda &lt;alberto@alberto-Aspire-V3-571></p>
+
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.</p>]]></long-description>
+      <tag line="2" name="package" description="phpkit"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="phpkit" line="37" package="Default">
       <extends/>
       <name>mysql_table</name>
-      <full_name>\mysql_table</full_name>
-      <docblock line="4">
-        <description><![CDATA[Mysql_Table Class]]></description>
-        <long-description><![CDATA[]]></long-description>
-        <tag line="4" name="package" description="phpkit"/>
-        <tag line="4" name="subpackage" description="mysql"/>
-        <tag line="4" name="author" description="Alberto Miranda Dencowski &lt;alberto@fijatebien.net&gt;"/>
-        <tag line="4" name="since" description="0.0.1"/>
-        <tag line="4" name="licence" description="GPLv2"/>
-      </docblock>
-      <property final="false" static="false" visibility="private" line="25" namespace="global" package="Default">
+      <full_name>\phpkit\mysql_table</full_name>
+      <property final="false" static="false" visibility="private" line="49" namespace="phpkit" package="Default">
         <name>$name</name>
         <default><![CDATA[""]]></default>
-        <docblock line="18">
+        <docblock line="42">
           <description><![CDATA[The name of the table]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="18" name="access" description="private"/>
-          <tag line="18" name="var" description="" type="String">
+          <tag line="42" name="access" description="private"/>
+          <tag line="42" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="18" name="default" description="&quot;&quot;"/>
-          <tag line="18" name="since" description="0.0.1"/>
+          <tag line="42" name="default" description="&quot;&quot;"/>
+          <tag line="42" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="34" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="58" namespace="phpkit" package="Default">
         <name>$literal_name</name>
         <default><![CDATA[""]]></default>
-        <docblock line="27">
+        <docblock line="51">
           <description><![CDATA[The literal name of the table]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="27" name="access" description="private"/>
-          <tag line="27" name="var" description="" type="String">
+          <tag line="51" name="access" description="private"/>
+          <tag line="51" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="27" name="default" description="&quot;&quot;"/>
-          <tag line="27" name="since" description="0.0.1"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="private" line="43" namespace="global" package="Default">
-        <name>$fields</name>
-        <default><![CDATA[array()]]></default>
-        <docblock line="36">
-          <description><![CDATA[An Array of phpkit::mysql_field objects]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="36" name="access" description="private"/>
-          <tag line="36" name="var" description="" type="Array">
-            <type by_reference="false">Array</type>
-          </tag>
-          <tag line="36" name="default" description="array()"/>
-          <tag line="36" name="since" description="0.0.1"/>
-        </docblock>
-      </property>
-      <property final="false" static="false" visibility="public" line="50" namespace="global" package="Default">
-        <name>$connection</name>
-        <default><![CDATA[]]></default>
-        <docblock line="45">
-          <description><![CDATA[Mysql_Command to execute the queries]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="45" name="var" description="" type="\mysql_command">
-            <type by_reference="false">\mysql_command</type>
-          </tag>
-          <tag line="45" name="access" description="public"/>
-        </docblock>
-      </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="59" package="phpkit\mysql">
-        <name>__construct</name>
-        <full_name>__construct</full_name>
-        <docblock line="51">
-          <description><![CDATA[Contructor method for mysql_table]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="51" name="param" description="name" type="String" variable="$name">
-            <type by_reference="false">String</type>
-          </tag>
-          <tag line="51" name="param" description="li_name" type="String" variable="$li_name">
-            <type by_reference="false">String</type>
-          </tag>
-          <tag line="51" name="param" description="fields_arr" type="Array" variable="$fields_arr">
-            <type by_reference="false">Array</type>
-          </tag>
-          <tag line="51" name="access" description="public"/>
+          <tag line="51" name="default" description="&quot;&quot;"/>
           <tag line="51" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="59">
+      </property>
+      <property final="false" static="false" visibility="private" line="67" namespace="phpkit" package="Default">
+        <name>$fields</name>
+        <default><![CDATA[array()]]></default>
+        <docblock line="60">
+          <description><![CDATA[An Array of phpkit::mysql_field objects]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="60" name="access" description="private"/>
+          <tag line="60" name="var" description="" type="Array">
+            <type by_reference="false">Array</type>
+          </tag>
+          <tag line="60" name="default" description="array()"/>
+          <tag line="60" name="since" description="0.0.1"/>
+        </docblock>
+      </property>
+      <property final="false" static="false" visibility="public" line="74" namespace="phpkit" package="Default">
+        <name>$connection</name>
+        <default><![CDATA[]]></default>
+        <docblock line="69">
+          <description><![CDATA[Mysql_Command to execute the queries]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="69" name="var" description="" type="\phpkit\mysql_command">
+            <type by_reference="false">\phpkit\mysql_command</type>
+          </tag>
+          <tag line="69" name="access" description="public"/>
+        </docblock>
+      </property>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="83" package="Default">
+        <name>__construct</name>
+        <full_name>__construct</full_name>
+        <docblock line="75">
+          <description><![CDATA[Contructor method for mysql_table]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="75" name="param" description="name" type="String" variable="$name">
+            <type by_reference="false">String</type>
+          </tag>
+          <tag line="75" name="param" description="li_name" type="String" variable="$li_name">
+            <type by_reference="false">String</type>
+          </tag>
+          <tag line="75" name="param" description="fields_arr" type="Array" variable="$fields_arr">
+            <type by_reference="false">Array</type>
+          </tag>
+          <tag line="75" name="access" description="public"/>
+          <tag line="75" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="83">
           <name>$name</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="59">
+        <argument line="83">
           <name>$li_name</name>
           <default><![CDATA[""]]></default>
           <type/>
         </argument>
-        <argument line="59">
+        <argument line="83">
           <name>$fields_arr</name>
           <default><![CDATA[array()]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="72" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="96" package="Default">
         <name>generate_sql</name>
         <full_name>generate_sql</full_name>
-        <docblock line="65">
-          <description><![CDATA[Generate the SQL String for create the mysql table]]></description>
-          <long-description><![CDATA[]]></long-description>
-          <tag line="65" name="access" description="public"/>
-          <tag line="65" name="return" description="" type="void">
-            <type by_reference="false">void</type>
-          </tag>
-          <tag line="65" name="since" description="0.0.1"/>
-        </docblock>
-      </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="95" package="phpkit\mysql">
-        <name>get</name>
-        <full_name>get</full_name>
         <docblock line="89">
-          <description><![CDATA[Load the mysql_table from de database]]></description>
+          <description><![CDATA[Generate the SQL String for create the mysql table]]></description>
           <long-description><![CDATA[]]></long-description>
           <tag line="89" name="access" description="public"/>
           <tag line="89" name="return" description="" type="void">
@@ -863,101 +723,114 @@ Contains the resource of the connection to mysql server]]></description>
           <tag line="89" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="129" package="phpkit\mysql">
-        <name>get_form</name>
-        <full_name>get_form</full_name>
-        <docblock line="120">
-          <description><![CDATA[Generate HTML Form for the mysql_table]]></description>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="119" package="Default">
+        <name>get</name>
+        <full_name>get</full_name>
+        <docblock line="113">
+          <description><![CDATA[Load the mysql_table from de database]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="120" name="param" description="method" type="String" variable="$method">
-            <type by_reference="false">String</type>
-          </tag>
-          <tag line="120" name="param" description="id" type="String" variable="$id">
-            <type by_reference="false">String</type>
-          </tag>
-          <tag line="120" name="param" description="class" type="string" variable="$class">
-            <type by_reference="false">string</type>
-          </tag>
-          <tag line="120" name="access" description="public"/>
-          <tag line="120" name="return" description="" type="void">
+          <tag line="113" name="access" description="public"/>
+          <tag line="113" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="120" name="since" description="0.0.1"/>
+          <tag line="113" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="129">
+      </method>
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="153" package="Default">
+        <name>get_form</name>
+        <full_name>get_form</full_name>
+        <docblock line="144">
+          <description><![CDATA[Generate HTML Form for the mysql_table]]></description>
+          <long-description><![CDATA[]]></long-description>
+          <tag line="144" name="param" description="method" type="String" variable="$method">
+            <type by_reference="false">String</type>
+          </tag>
+          <tag line="144" name="param" description="id" type="String" variable="$id">
+            <type by_reference="false">String</type>
+          </tag>
+          <tag line="144" name="param" description="class" type="string" variable="$class">
+            <type by_reference="false">string</type>
+          </tag>
+          <tag line="144" name="access" description="public"/>
+          <tag line="144" name="return" description="" type="void">
+            <type by_reference="false">void</type>
+          </tag>
+          <tag line="144" name="since" description="0.0.1"/>
+        </docblock>
+        <argument line="153">
           <name>$method</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="129">
+        <argument line="153">
           <name>$id</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="129">
+        <argument line="153">
           <name>$class</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="161" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="185" package="Default">
         <name>post</name>
         <full_name>post</full_name>
-        <docblock line="155">
+        <docblock line="179">
           <description><![CDATA[Receive and process forms POST]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="155" name="access" description="public"/>
-          <tag line="155" name="return" description="" type="void">
+          <tag line="179" name="access" description="public"/>
+          <tag line="179" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
-          <tag line="155" name="since" description="0.0.1"/>
+          <tag line="179" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="181" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="205" package="Default">
         <name>validate_type</name>
         <full_name>validate_type</full_name>
-        <docblock line="173">
+        <docblock line="197">
           <description><![CDATA[Validate the field type]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="173" name="param" description="var" type="String" variable="$var">
+          <tag line="197" name="param" description="var" type="String" variable="$var">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="173" name="param" description="type" type="String" variable="$type">
+          <tag line="197" name="param" description="type" type="String" variable="$type">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="173" name="access" description="public"/>
-          <tag line="173" name="return" description="" type="bool">
+          <tag line="197" name="access" description="public"/>
+          <tag line="197" name="return" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="173" name="since" description="0.0.1"/>
+          <tag line="197" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="181">
+        <argument line="205">
           <name>$var</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="181">
+        <argument line="205">
           <name>$type</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="203" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="227" package="Default">
         <name>sanitize</name>
         <full_name>sanitize</full_name>
-        <docblock line="196">
+        <docblock line="220">
           <description><![CDATA[Strip and Add slashes to string to make it safer]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="196" name="param" description="string" type="String" variable="$string">
+          <tag line="220" name="param" description="string" type="String" variable="$string">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="196" name="access" description="public"/>
-          <tag line="196" name="return" description="" type="string">
+          <tag line="220" name="access" description="public"/>
+          <tag line="220" name="return" description="" type="string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="196" name="since" description="0.0.1"/>
+          <tag line="220" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="203">
+        <argument line="227">
           <name>$string</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -965,189 +838,201 @@ Contains the resource of the connection to mysql server]]></description>
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_table.php</error>
+      <error line="37" code="50000">No DocBlock was found for \phpkit\mysql_table</error>
     </parse_markers>
+    <source>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</source>
   </file>
-  <file path="mysql_command.php" hash="fa68ea2d870e677d0477416aeb03ab47" package="Default">
-    <class final="false" abstract="false" namespace="global" line="12" package="phpkit\mysql">
+  <file path="mysql_command.php" hash="4c39f7a2c2cb222352bd64b2a911a840" package="phpkit">
+    <docblock line="3">
+      <description><![CDATA[mysql_command.php]]></description>
+      <long-description><![CDATA[<p>Copyright 2012 Alberto Miranda &lt;alberto@alberto-Aspire-V3-571></p>
+
+<p>This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.</p>
+
+<p>This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.</p>
+
+<p>You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+MA 02110-1301, USA.</p>]]></long-description>
+      <tag line="3" name="package" description="phpkit"/>
+    </docblock>
+    <class final="false" abstract="false" namespace="phpkit" line="39" package="Default">
       <extends/>
       <name>mysql_command</name>
-      <full_name>\mysql_command</full_name>
-      <docblock line="3">
-        <description><![CDATA[This class handles the mysql_query function]]></description>
-        <long-description><![CDATA[]]></long-description>
-        <tag line="3" name="package" description="phpkit"/>
-        <tag line="3" name="subpackage" description="mysql"/>
-        <tag line="3" name="author" description="Alberto Miranda Dencowski &lt;alberto@fijatebien.net&gt;"/>
-        <tag line="3" name="since" description="0.0.1"/>
-        <tag line="3" name="licence" description="GPLv2"/>
-      </docblock>
-      <property final="false" static="false" visibility="private" line="25" namespace="global" package="Default">
+      <full_name>\phpkit\mysql_command</full_name>
+      <property final="false" static="false" visibility="private" line="52" namespace="phpkit" package="Default">
         <name>$sql_string</name>
         <default><![CDATA[]]></default>
-        <docblock line="18">
+        <docblock line="45">
           <description><![CDATA[SQL String to execute]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="18" name="access" description="private"/>
-          <tag line="18" name="var" description="" type="String">
+          <tag line="45" name="access" description="private"/>
+          <tag line="45" name="var" description="" type="String">
             <type by_reference="false">String</type>
           </tag>
-          <tag line="18" name="since" description="0.0.1"/>
+          <tag line="45" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="public" line="33" namespace="global" package="Default">
+      <property final="false" static="false" visibility="public" line="60" namespace="phpkit" package="Default">
         <name>$mysql_query_id</name>
         <default><![CDATA[null]]></default>
-        <docblock line="27">
+        <docblock line="54">
           <description><![CDATA[Mysql Query Resource]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="27" name="access" description="private"/>
-          <tag line="27" name="var" description="" type="Resource">
+          <tag line="54" name="access" description="private"/>
+          <tag line="54" name="var" description="" type="Resource">
             <type by_reference="false">Resource</type>
           </tag>
-          <tag line="27" name="since" description="0.0.1"/>
+          <tag line="54" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="41" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="68" namespace="phpkit" package="Default">
         <name>$mysql_connection_obj</name>
         <default><![CDATA[null]]></default>
-        <docblock line="35">
+        <docblock line="62">
           <description><![CDATA[Mysql_Connection Object]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="35" name="access" description="private"/>
-          <tag line="35" name="var" description="" type="\phpkit::mysql_connection">
-            <type by_reference="false">\phpkit::mysql_connection</type>
+          <tag line="62" name="access" description="private"/>
+          <tag line="62" name="var" description="" type="\phpkit\phpkit::mysql_connection">
+            <type by_reference="false">\phpkit\phpkit::mysql_connection</type>
           </tag>
-          <tag line="35" name="since" description="0.0.1"/>
+          <tag line="62" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <property final="false" static="false" visibility="private" line="51" namespace="global" package="Default">
+      <property final="false" static="false" visibility="private" line="78" namespace="phpkit" package="Default">
         <name>$command_type</name>
         <default><![CDATA[]]></default>
-        <docblock line="43">
+        <docblock line="70">
           <description><![CDATA[If the query is for data fetching, yo must pass 1 in the construct method
 Else pass 0]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="43" name="access" description="private"/>
-          <tag line="43" name="var" description="" type="int">
+          <tag line="70" name="access" description="private"/>
+          <tag line="70" name="var" description="" type="int">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="43" name="since" description="0.0.1"/>
+          <tag line="70" name="since" description="0.0.1"/>
         </docblock>
       </property>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="70" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="97" package="Default">
         <name>__construct</name>
         <full_name>__construct</full_name>
-        <docblock line="55">
+        <docblock line="82">
           <description><![CDATA[Mysql_Command Contructor Method]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="55" name="param" description="sql_string" type="string" variable="$sql_string">
+          <tag line="82" name="param" description="sql_string" type="string" variable="$sql_string">
             <type by_reference="false">string</type>
           </tag>
-          <tag line="55" name="param" description="connection" type="\mysql_connection" variable="$connection">
-            <type by_reference="false">\mysql_connection</type>
+          <tag line="82" name="param" description="connection" type="\phpkit\mysql_connection" variable="$connection">
+            <type by_reference="false">\phpkit\mysql_connection</type>
           </tag>
-          <tag line="55" name="param" description="cmd_type" type="int" variable="$cmd_type">
+          <tag line="82" name="param" description="cmd_type" type="int" variable="$cmd_type">
             <type by_reference="false">int</type>
           </tag>
-          <tag line="55" name="access" description="public"/>
-          <tag line="55" name="return" description="" type="\phpkit::mysql_command">
-            <type by_reference="false">\phpkit::mysql_command</type>
+          <tag line="82" name="access" description="public"/>
+          <tag line="82" name="return" description="" type="\phpkit\phpkit::mysql_command">
+            <type by_reference="false">\phpkit\phpkit::mysql_command</type>
           </tag>
-          <tag line="55" name="since" description="0.0.1"/>
+          <tag line="82" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="70">
+        <argument line="97">
           <name>$sql_string</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="70">
+        <argument line="97">
           <name>$connection</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
-        <argument line="70">
+        <argument line="97">
           <name>$cmd_type</name>
           <default><![CDATA[]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="92" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="119" package="Default">
         <name>exec</name>
         <full_name>exec</full_name>
-        <docblock line="80">
+        <docblock line="107">
           <description><![CDATA[This method run the mysql_query]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="80" name="param" description="String" type="\sql_string" variable="$sql_string">
-            <type by_reference="false">\sql_string</type>
+          <tag line="107" name="param" description="String" type="\phpkit\sql_string" variable="$sql_string">
+            <type by_reference="false">\phpkit\sql_string</type>
           </tag>
-          <tag line="80" name="access" description="public"/>
-          <tag line="80" name="return" description="" type="bool">
+          <tag line="107" name="access" description="public"/>
+          <tag line="107" name="return" description="" type="bool">
             <type by_reference="false">bool</type>
           </tag>
-          <tag line="80" name="since" description="0.0.1"/>
+          <tag line="107" name="since" description="0.0.1"/>
         </docblock>
-        <argument line="92">
+        <argument line="119">
           <name>$sql_string</name>
           <default><![CDATA[null]]></default>
           <type/>
         </argument>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="118" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="145" package="Default">
         <name>fetch</name>
         <full_name>fetch</full_name>
-        <docblock line="108">
+        <docblock line="135">
           <description><![CDATA[This method run mysql_fetch_object and return an array with the rows]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="108" name="access" description="public"/>
-          <tag line="108" name="return" description="" type="array">
+          <tag line="135" name="access" description="public"/>
+          <tag line="135" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="108" name="since" description="0.0.1"/>
+          <tag line="135" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="140" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="167" package="Default">
         <name>fetch_fields</name>
         <full_name>fetch_fields</full_name>
-        <docblock line="132">
+        <docblock line="159">
           <description><![CDATA[This function run mysql_fetch_field recursively and return an array
 with the fields in objects]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="132" name="access" description="public"/>
-          <tag line="132" name="return" description="" type="array">
+          <tag line="159" name="access" description="public"/>
+          <tag line="159" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="132" name="since" description="0.0.1"/>
+          <tag line="159" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="158" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="185" package="Default">
         <name>fetch_one</name>
         <full_name>fetch_one</full_name>
-        <docblock line="151">
+        <docblock line="178">
           <description><![CDATA[This function fetch only one row of the query]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="151" name="access" description="public"/>
-          <tag line="151" name="return" description="" type="array">
+          <tag line="178" name="access" description="public"/>
+          <tag line="178" name="return" description="" type="array">
             <type by_reference="false">array</type>
           </tag>
-          <tag line="151" name="since" description="0.0.1"/>
+          <tag line="178" name="since" description="0.0.1"/>
         </docblock>
       </method>
-      <method final="false" abstract="false" static="false" visibility="public" namespace="global" line="172" package="phpkit\mysql">
+      <method final="false" abstract="false" static="false" visibility="public" namespace="phpkit" line="199" package="Default">
         <name>generate_report</name>
         <full_name>generate_report</full_name>
-        <docblock line="163">
+        <docblock line="190">
           <description><![CDATA[This function creates a html table based on a fetched array]]></description>
           <long-description><![CDATA[]]></long-description>
-          <tag line="163" name="param" description="array" type="\$fetch_data" variable="$fetch_data">
-            <type by_reference="false">\$fetch_data</type>
+          <tag line="190" name="param" description="array" type="\phpkit\$fetch_data" variable="$fetch_data">
+            <type by_reference="false">\phpkit\$fetch_data</type>
           </tag>
-          <tag line="163" name="access" description="public"/>
-          <tag line="163" name="return" description="" type="void">
+          <tag line="190" name="access" description="public"/>
+          <tag line="190" name="return" description="" type="void">
             <type by_reference="false">void</type>
           </tag>
         </docblock>
-        <argument line="172">
+        <argument line="199">
           <name>$fetch_data</name>
           <default><![CDATA[]]></default>
           <type/>
@@ -1155,14 +1040,13 @@ with the fields in objects]]></description>
       </method>
     </class>
     <parse_markers>
-      <error line="0" code="50007">No page-level DocBlock was found in file mysql_command.php</error>
+      <error line="39" code="50000">No DocBlock was found for \phpkit\mysql_command</error>
     </parse_markers>
+    <source>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</source>
   </file>
   <package name="Default" full_name="Default"/>
-  <package name="phpkit" full_name="phpkit">
-    <package name="mysql" full_name="phpkit\mysql"/>
-  </package>
-  <namespace name="global" full_name="global"/>
+  <package name="phpkit" full_name="phpkit"/>
+  <namespace name="phpkit" full_name="phpkit"/>
   <marker count="0">todo</marker>
   <marker count="0">fixme</marker>
   <deprecated count="0"/>
